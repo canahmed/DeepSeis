@@ -1,0 +1,80 @@
+# ============================================================
+# DeepSeis - Proje Konfigürasyonu
+# Sprint 1: Veri Hattı Kurulumu
+# ============================================================
+
+# --- İstasyon Bilgisi ---
+station:
+  network: "KO"            # KOERI ağ kodu
+  station: "GAZ"            # İstasyon kodu (Gaziantep - Doğu Anadolu Fayı çevresi)
+  channels: "HH*"           # High-gain broadband kanallar (HHZ, HHN, HHE)
+  location: "*"             # Tüm lokasyonlar
+
+# --- Zaman Aralığı ---
+time_range:
+  start: "2023-02-06"       # Kahramanmaraş depremi sonrası dönem
+  end: "2023-08-06"         # 6 aylık sürekli kayıt
+
+# --- Veri Kaynağı ---
+data_source:
+  fdsn_client: "IRIS"       # Birincil veri kaynağı (KOERI waveform erişimi sınırlı)
+  fdsn_fallback: "KOERI"    # Yedek veri kaynağı
+  catalog_client: "USGS"    # Deprem kataloğu kaynağı
+
+# --- Deprem Kataloğu Parametreleri ---
+catalog:
+  min_magnitude: 3.5        # Minimum Mw büyüklüğü
+  max_radius_km: 200        # İstasyon çevresindeki arama yarıçapı (km)
+  latitude: 37.17           # İstasyon yaklaşık enlem (Gaziantep)
+  longitude: 37.21          # İstasyon yaklaşık boylam (Gaziantep)
+
+# --- Ön İşleme Parametreleri ---
+preprocessing:
+  # Butterworth bant-geçiren filtre
+  filter:
+    type: "bandpass"
+    freqmin: 1.0             # Alt kesim frekansı (Hz)
+    freqmax: 45.0            # Üst kesim frekansı (Hz)
+    corners: 4               # Filtre derecesi
+    zerophase: true           # Sıfır fazlı filtreleme
+
+  # Pencereleme
+  windowing:
+    window_length_sec: 60    # Pencere uzunluğu (saniye)
+    overlap_ratio: 0.5       # Örtüşme oranı (%50)
+
+  # Normalizasyon
+  normalization:
+    method: "zscore"         # Z-score normalizasyonu
+
+  # Kalite kontrolü
+  quality:
+    min_data_ratio: 0.95     # Minimum veri doluluğu oranı
+    max_gap_sec: 1.0         # Maksimum kabul edilebilir boşluk (saniye)
+
+# --- Spektral Dönüşüm Parametreleri ---
+spectral:
+  stft:
+    n_fft: 256               # FFT boyutu
+    hop_length: 64           # Hop uzunluğu
+    window: "hann"           # Pencere fonksiyonu
+
+# --- Etiketleme Parametreleri ---
+labeling:
+  pre_event_windows_hours:   # Deprem öncesi etiketleme pencereleri
+    - 3
+    - 6
+    - 12
+    - 24
+  default_window_hours: 6    # Varsayılan pencere (saat)
+
+# --- Dosya Yolları ---
+paths:
+  raw_mseed: "data/raw/mseed"
+  raw_catalog: "data/raw/catalog"
+  processed_windows: "data/processed/windows"
+  processed_stft: "data/processed/stft"
+  interim: "data/interim"
+  figures: "artifacts/figures"
+  logs: "artifacts/logs"
+  reports: "artifacts/reports"
