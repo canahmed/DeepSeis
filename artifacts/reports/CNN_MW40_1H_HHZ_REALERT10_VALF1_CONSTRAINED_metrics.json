@@ -1,0 +1,27 @@
+{
+  "accuracy": 0.8786518911988277,
+  "precision": 0.0252167060677699,
+  "recall": 0.26666666666666666,
+  "f1_score": 0.04607631389488841,
+  "roc_auc": 0.6324225622742847,
+  "pr_auc": 0.028571611808510197,
+  "confusion_matrix": [
+    [
+      19124,
+      2474
+    ],
+    [
+      176,
+      64
+    ]
+  ],
+  "support": {
+    "total": 21838,
+    "positive": 240,
+    "negative": 21598
+  },
+  "threshold": 0.45672932434082036,
+  "threshold_source": "validation_f1_constrained",
+  "validation_f1_at_threshold": 0.007259528130671506,
+  "experiment": "mw40_1h_hhz"
+}

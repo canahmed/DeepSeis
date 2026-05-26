@@ -1,0 +1,173 @@
+% -------------------- YÖNTEM --------------------
+\chapter{YÖNTEM}
+
+Bu bölümde DeepSeis sisteminin veri işleme, etiketleme, modelleme ve değerlendirme adımları açıklanmaktadır. Çalışma, sismik sinyalden zaman-frekans temsili üretme, farklı deney protokollerini karşılaştırma ve en başarılı modeli web arayüzünde çalıştırma aşamalarından oluşmaktadır.
+
+\section{Veri Kaynakları}
+
+\subsection{Sürekli Sismik İstasyon Verileri}
+
+Çalışmada sürekli sismik istasyon kayıtları kullanılmıştır. Ham veriler MiniSEED formatında saklanmakta ve istasyon bileşenleri HHZ, HHN ve HHE kanalları üzerinden temsil edilmektedir. Bu tez kapsamında güçlü ve tutarlı ilk deney seti HHZ düşey bileşeni üzerinden oluşturulmuştur. Üç bileşenli modelleme için kanalların zaman damgası seviyesinde hizalanması gerektiğinden, çok bileşenli füzyon gelecek çalışma olarak bırakılmıştır.
+
+\subsection{Deprem Kataloğu}
+
+Etiket üretimi için aynı zaman aralığına karşılık gelen deprem kataloğu kullanılmıştır. Katalog kayıtları olay zamanı, büyüklük, konum ve derinlik bilgilerini içermektedir. Deneylerde özellikle Mw $\geq$ 4,0 olayları kullanılmıştır; çünkü daha küçük olaylar gürültüyle daha kolay karışabilmekte, daha büyük olaylar ise veri aralığında az sayıda bulunabilmektedir.
+
+\section{Veri Ön İşleme}
+
+\subsection{Pencereleme}
+
+Sürekli sismik kayıtlar kısa zaman pencerelerine ayrılmıştır. Her pencere bağımsız bir örnek olarak ele alınmış ve daha sonra STFT tabanlı zaman-frekans temsiline dönüştürülmüştür. İşlenmiş HHZ veri kümesi toplam 162.337 pencere içermektedir.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Kullanılan Veri Kümesi Özeti}
+\begin{adjustbox}{center,max width=\textwidth}
+\begin{tabular}{ll}
+\toprule
+\textbf{Özellik} & \textbf{Değer} \\
+\midrule
+Kanal & HHZ \\
+Toplam pencere & 162.337 \\
+STFT boyutu & 129 $\times$ 95 \\
+Kronolojik eğitim örneği & 123.422 \\
+Kronolojik doğrulama örneği & 17.077 \\
+Kronolojik test örneği & 21.838 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\label{tab:veri_ozellikleri}
+\end{table}
+
+\subsection{Spektral Dönüşüm}
+
+Sismik pencereler kısa süreli Fourier dönüşümü (STFT) ile zaman-frekans uzayına taşınmıştır. STFT, sinyalin farklı zaman aralıklarında hangi frekans bileşenlerini içerdiğini gösterdiği için sismik anomali analizi açısından uygundur:
+
+\begin{equation}
+STFT\{x(t)\}(\tau, f) = \int_{-\infty}^{\infty} x(t) w(t-\tau) e^{-j2\pi ft} dt
+\end{equation}
+
+Burada $w(t)$ pencere fonksiyonu, $\tau$ zaman kayması ve $f$ frekans değişkenidir.
+
+\begin{figure}[htbp]
+    \centering
+    \fitfig[max width=0.78\textwidth,max height=0.48\textheight]{figures/sample_spectrogram.png}
+    \caption{STFT tabanlı zaman-frekans dönüşümü örneği}
+    \label{fig:stft_ornek}
+\end{figure}
+
+\section{Öznitelik Çıkarımı}
+
+Derin öğrenme modellerinde STFT matrisi doğrudan giriş olarak kullanılmıştır. Feature tabanlı modeller için ise her STFT penceresinden 51 boyutlu özet öznitelik vektörü çıkarılmıştır. Bu öznitelikler aşağıdaki gruplardan oluşmaktadır:
+
+\begin{itemize}
+    \item Spektrogram geneli için ortalama, standart sapma, minimum, maksimum ve yüzdelik değerler,
+    \item Frekans profili ve zaman profili istatistikleri,
+    \item Sekiz frekans bandı ve sekiz zaman bandı ortalamaları,
+    \item Frekans ve zaman yönlü gradyan özetleri,
+    \item 4$\times$4 zaman-frekans ızgarası üzerinde bölgesel enerji ortalamaları.
+\end{itemize}
+
+Bu yaklaşım, spektrogramdaki enerji dağılımını kompakt ve hızlı eğitilebilir bir temsil haline getirmiştir.
+
+\section{Etiketleme Protokolleri}
+
+Çalışmada üç farklı problem tanımı değerlendirilmiştir.
+
+\subsection{Deprem Öncesi Kısa Pencere}
+
+İlk deneylerde Mw $\geq$ 4,0 olaylarından önceki 1 saatlik pencereler pozitif sınıf olarak etiketlenmiştir:
+
+\begin{equation}
+y_i = \begin{cases}
+1, & t_{eq} - 1\text{ saat} \leq t_i \leq t_{eq} \\
+0, & \text{diğer}
+\end{cases}
+\end{equation}
+
+Bu kurulum, deprem öncesi kısa dönemli sinyal aramayı hedeflediği için en zor deney protokollerinden biridir.
+
+\subsection{Olay Çevresi Anomali Penceresi}
+
+İkinci protokolde Mw $\geq$ 4,0 olaylarının $\pm$60 dakika çevresindeki pencereler pozitif sınıf olarak tanımlanmıştır:
+
+\begin{equation}
+y_i = \begin{cases}
+1, & |t_i - t_{eq}| \leq 60\text{ dakika} \\
+0, & \text{diğer}
+\end{cases}
+\end{equation}
+
+Bu protokol, doğrudan deprem tahmini değil, olay çevresi sismik aktiviteyi ayırt etme görevidir.
+
+\subsection{Temiz Normal / Anomali Ayrımı}
+
+Nihai başarılı deneyde pozitif sınıf, Mw $\geq$ 4,0 olaylarının $\pm$60 dakika çevresinden; negatif sınıf ise herhangi bir Mw $\geq$ 4,0 olayından en az 48 saat uzak pencerelerden seçilmiştir:
+
+\begin{equation}
+y_i = \begin{cases}
+1, & |t_i - t_{eq}| \leq 60\text{ dakika} \\
+0, & |t_i - t_{eq}| \geq 48\text{ saat}
+\end{cases}
+\end{equation}
+
+Bu protokol, modelin temiz normal dönemler ile olay çevresi anomali dönemleri arasındaki ayırt edilebilir örüntüleri öğrenip öğrenemediğini ölçmektedir.
+
+\section{Modelleme Yaklaşımı}
+
+\subsection{Derin Öğrenme Modelleri}
+
+Proje kapsamında LSTM, GRU, CNN, Transformer ve hibrit CNN-Transformer mimarileri denenmiştir. CNN modeli STFT spektrogramını iki boyutlu görüntü gibi işlemiştir. Transformer tabanlı modeller ise zaman-frekans temsilinden uzun dönemli ilişkiler öğrenmeyi hedeflemiştir. Kronolojik testlerde sınıf dengesizliği ve dağılım kayması nedeniyle bu modellerin F1 skorları sınırlı kalmıştır.
+
+\subsection{Feature Tabanlı Modeller}
+
+STFT özet öznitelikleri üzerinde Logistic Regression, HistGradientBoosting, ExtraTrees ve RandomForest modelleri denenmiştir. En başarılı ve dengeli sonuç HistGradientBoosting modeliyle elde edilmiştir. Model, her pencere için anomali olasılığı üretmekte; karar eşiği doğrulama kümesinde F1 skorunu en iyi yapan değere göre seçilmektedir.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Nihai Feature Model Ayarları}
+\begin{adjustbox}{center,max width=\textwidth}
+\begin{tabularx}{0.88\textwidth}{lX}
+\toprule
+\textbf{Parametre} & \textbf{Değer} \\
+\midrule
+Model & HistGradientBoostingClassifier \\
+Öznitelik sayısı & 51 \\
+Pozitif sınıf & Mw $\geq$ 4,0 olayının $\pm$60 dakikası \\
+Negatif sınıf & Olaylardan en az 48 saat uzak pencereler \\
+Test örneği & 7.826 \\
+Karar eşiği & 0,4433 \\
+\bottomrule
+\end{tabularx}
+\end{adjustbox}
+\label{tab:hyperparams}
+\end{table}
+
+\section{Değerlendirme Metrikleri}
+
+Model performansı accuracy, precision, recall, F1, ROC-AUC ve PR-AUC metrikleriyle değerlendirilmiştir:
+
+\begin{align}
+\text{Precision} &= \frac{TP}{TP + FP} \\
+\text{Recall} &= \frac{TP}{TP + FN} \\
+\text{F1-Score} &= 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
+\end{align}
+
+Sınıf dengesizliği bulunduğunda accuracy tek başına yeterli değildir. Bu nedenle özellikle F1, recall, precision ve PR-AUC değerleri birlikte yorumlanmıştır.
+
+\section{Uygulama Arayüzü}
+
+Eğitilen en başarılı model \texttt{joblib} formatında kaydedilmiş ve Flask tabanlı DeepSeis arayüzüne bağlanmıştır. Arayüz, test pencerelerini sırayla okuyarak her pencere için anomali olasılığı üretmekte ve karar eşiği aşıldığında görsel uyarı vermektedir. Böylece model yalnızca raporlanan bir deney sonucu olarak kalmamış, çalışan bir prototip sistem içinde kullanılabilir hale getirilmiştir.
+
+\section{Kullanılan Teknolojiler}
+
+\begin{itemize}
+    \item \textbf{Python:} Veri işleme, model eğitimi ve deney yönetimi
+    \item \textbf{NumPy / SciPy:} Sayısal hesaplama ve sinyal işleme
+    \item \textbf{PyTorch:} Derin öğrenme modelleri
+    \item \textbf{Scikit-learn:} Feature tabanlı sınıflandırıcılar ve metrikler
+    \item \textbf{Matplotlib:} Tez görselleri
+    \item \textbf{Flask:} Web arayüzü ve model servisi
+\end{itemize}

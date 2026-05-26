@@ -1,0 +1,8552 @@
+{
+  "total_days": 178,
+  "errors": 0,
+  "total_windows": 1522897,
+  "total_spectrograms": 1522897,
+  "daily_stats": [
+    {
+      "date": "2023-02-09",
+      "file": "KO.GAZ.2023-02-09.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 416,
+          "spectrograms": 416,
+          "window_shape": [
+            416,
+            6000
+          ],
+          "stft_shape": [
+            416,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1042,
+          "spectrograms": 1042,
+          "window_shape": [
+            1042,
+            6000
+          ],
+          "stft_shape": [
+            1042,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1871,
+          "spectrograms": 1871,
+          "window_shape": [
+            1871,
+            6000
+          ],
+          "stft_shape": [
+            1871,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8601,
+      "total_spectrograms": 8601
+    },
+    {
+      "date": "2023-02-10",
+      "file": "KO.GAZ.2023-02-10.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 15,
+          "spectrograms": 15,
+          "window_shape": [
+            15,
+            6000
+          ],
+          "stft_shape": [
+            15,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 54,
+          "spectrograms": 54,
+          "window_shape": [
+            54,
+            6000
+          ],
+          "stft_shape": [
+            54,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 554,
+          "spectrograms": 554,
+          "window_shape": [
+            554,
+            6000
+          ],
+          "stft_shape": [
+            554,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8522,
+      "total_spectrograms": 8522
+    },
+    {
+      "date": "2023-02-11",
+      "file": "KO.GAZ.2023-02-11.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 684,
+          "spectrograms": 684,
+          "window_shape": [
+            684,
+            6000
+          ],
+          "stft_shape": [
+            684,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 94,
+          "spectrograms": 94,
+          "window_shape": [
+            94,
+            6000
+          ],
+          "stft_shape": [
+            94,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 183,
+          "spectrograms": 183,
+          "window_shape": [
+            183,
+            6000
+          ],
+          "stft_shape": [
+            183,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8559,
+      "total_spectrograms": 8559
+    },
+    {
+      "date": "2023-02-12",
+      "file": "KO.GAZ.2023-02-12.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 506,
+          "spectrograms": 506,
+          "window_shape": [
+            506,
+            6000
+          ],
+          "stft_shape": [
+            506,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1520,
+          "spectrograms": 1520,
+          "window_shape": [
+            1520,
+            6000
+          ],
+          "stft_shape": [
+            1520,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 506,
+          "spectrograms": 506,
+          "window_shape": [
+            506,
+            6000
+          ],
+          "stft_shape": [
+            506,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8621,
+      "total_spectrograms": 8621
+    },
+    {
+      "date": "2023-02-13",
+      "file": "KO.GAZ.2023-02-13.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1584,
+          "spectrograms": 1584,
+          "window_shape": [
+            1584,
+            6000
+          ],
+          "stft_shape": [
+            1584,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8635,
+      "total_spectrograms": 8635
+    },
+    {
+      "date": "2023-02-14",
+      "file": "KO.GAZ.2023-02-14.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 571,
+          "spectrograms": 571,
+          "window_shape": [
+            571,
+            6000
+          ],
+          "stft_shape": [
+            571,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 571,
+          "spectrograms": 571,
+          "window_shape": [
+            571,
+            6000
+          ],
+          "stft_shape": [
+            571,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 571,
+          "spectrograms": 571,
+          "window_shape": [
+            571,
+            6000
+          ],
+          "stft_shape": [
+            571,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8540,
+      "total_spectrograms": 8540
+    },
+    {
+      "date": "2023-02-15",
+      "file": "KO.GAZ.2023-02-15.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 376,
+          "spectrograms": 376,
+          "window_shape": [
+            376,
+            6000
+          ],
+          "stft_shape": [
+            376,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 377,
+          "spectrograms": 377,
+          "window_shape": [
+            377,
+            6000
+          ],
+          "stft_shape": [
+            377,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 377,
+          "spectrograms": 377,
+          "window_shape": [
+            377,
+            6000
+          ],
+          "stft_shape": [
+            377,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8608,
+      "total_spectrograms": 8608
+    },
+    {
+      "date": "2023-02-16",
+      "file": "KO.GAZ.2023-02-16.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 469,
+          "spectrograms": 469,
+          "window_shape": [
+            469,
+            6000
+          ],
+          "stft_shape": [
+            469,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 522,
+          "spectrograms": 522,
+          "window_shape": [
+            522,
+            6000
+          ],
+          "stft_shape": [
+            522,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 522,
+          "spectrograms": 522,
+          "window_shape": [
+            522,
+            6000
+          ],
+          "stft_shape": [
+            522,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8533,
+      "total_spectrograms": 8533
+    },
+    {
+      "date": "2023-02-17",
+      "file": "KO.GAZ.2023-02-17.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 497,
+          "spectrograms": 497,
+          "window_shape": [
+            497,
+            6000
+          ],
+          "stft_shape": [
+            497,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 156,
+          "spectrograms": 156,
+          "window_shape": [
+            156,
+            6000
+          ],
+          "stft_shape": [
+            156,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 361,
+          "spectrograms": 361,
+          "window_shape": [
+            361,
+            6000
+          ],
+          "stft_shape": [
+            361,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8481,
+      "total_spectrograms": 8481
+    },
+    {
+      "date": "2023-02-18",
+      "file": "KO.GAZ.2023-02-18.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 511,
+          "spectrograms": 511,
+          "window_shape": [
+            511,
+            6000
+          ],
+          "stft_shape": [
+            511,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1255,
+          "spectrograms": 1255,
+          "window_shape": [
+            1255,
+            6000
+          ],
+          "stft_shape": [
+            1255,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1395,
+          "spectrograms": 1395,
+          "window_shape": [
+            1395,
+            6000
+          ],
+          "stft_shape": [
+            1395,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8605,
+      "total_spectrograms": 8605
+    },
+    {
+      "date": "2023-02-19",
+      "file": "KO.GAZ.2023-02-19.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 347,
+          "spectrograms": 347,
+          "window_shape": [
+            347,
+            6000
+          ],
+          "stft_shape": [
+            347,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1433,
+          "spectrograms": 1433,
+          "window_shape": [
+            1433,
+            6000
+          ],
+          "stft_shape": [
+            1433,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 907,
+          "spectrograms": 907,
+          "window_shape": [
+            907,
+            6000
+          ],
+          "stft_shape": [
+            907,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8581,
+      "total_spectrograms": 8581
+    },
+    {
+      "date": "2023-02-20",
+      "file": "KO.GAZ.2023-02-20.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 650,
+          "spectrograms": 650,
+          "window_shape": [
+            650,
+            6000
+          ],
+          "stft_shape": [
+            650,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1227,
+          "spectrograms": 1227,
+          "window_shape": [
+            1227,
+            6000
+          ],
+          "stft_shape": [
+            1227,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1244,
+          "spectrograms": 1244,
+          "window_shape": [
+            1244,
+            6000
+          ],
+          "stft_shape": [
+            1244,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8622,
+      "total_spectrograms": 8622
+    },
+    {
+      "date": "2023-02-21",
+      "file": "KO.GAZ.2023-02-21.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1465,
+          "spectrograms": 1465,
+          "window_shape": [
+            1465,
+            6000
+          ],
+          "stft_shape": [
+            1465,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 357,
+          "spectrograms": 357,
+          "window_shape": [
+            357,
+            6000
+          ],
+          "stft_shape": [
+            357,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1475,
+          "spectrograms": 1475,
+          "window_shape": [
+            1475,
+            6000
+          ],
+          "stft_shape": [
+            1475,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8568,
+      "total_spectrograms": 8568
+    },
+    {
+      "date": "2023-02-22",
+      "file": "KO.GAZ.2023-02-22.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 373,
+          "spectrograms": 373,
+          "window_shape": [
+            373,
+            6000
+          ],
+          "stft_shape": [
+            373,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1615,
+          "spectrograms": 1615,
+          "window_shape": [
+            1615,
+            6000
+          ],
+          "stft_shape": [
+            1615,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 372,
+          "spectrograms": 372,
+          "window_shape": [
+            372,
+            6000
+          ],
+          "stft_shape": [
+            372,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8628,
+      "total_spectrograms": 8628
+    },
+    {
+      "date": "2023-02-23",
+      "file": "KO.GAZ.2023-02-23.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 471,
+          "spectrograms": 471,
+          "window_shape": [
+            471,
+            6000
+          ],
+          "stft_shape": [
+            471,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 471,
+          "spectrograms": 471,
+          "window_shape": [
+            471,
+            6000
+          ],
+          "stft_shape": [
+            471,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 825,
+          "spectrograms": 825,
+          "window_shape": [
+            825,
+            6000
+          ],
+          "stft_shape": [
+            825,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8616,
+      "total_spectrograms": 8616
+    },
+    {
+      "date": "2023-02-24",
+      "file": "KO.GAZ.2023-02-24.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1688,
+          "spectrograms": 1688,
+          "window_shape": [
+            1688,
+            6000
+          ],
+          "stft_shape": [
+            1688,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1688,
+          "spectrograms": 1688,
+          "window_shape": [
+            1688,
+            6000
+          ],
+          "stft_shape": [
+            1688,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1468,
+          "spectrograms": 1468,
+          "window_shape": [
+            1468,
+            6000
+          ],
+          "stft_shape": [
+            1468,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8613,
+      "total_spectrograms": 8613
+    },
+    {
+      "date": "2023-02-25",
+      "file": "KO.GAZ.2023-02-25.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 247,
+          "spectrograms": 247,
+          "window_shape": [
+            247,
+            6000
+          ],
+          "stft_shape": [
+            247,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 235,
+          "spectrograms": 235,
+          "window_shape": [
+            235,
+            6000
+          ],
+          "stft_shape": [
+            235,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 247,
+          "spectrograms": 247,
+          "window_shape": [
+            247,
+            6000
+          ],
+          "stft_shape": [
+            247,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8613,
+      "total_spectrograms": 8613
+    },
+    {
+      "date": "2023-02-26",
+      "file": "KO.GAZ.2023-02-26.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1386,
+          "spectrograms": 1386,
+          "window_shape": [
+            1386,
+            6000
+          ],
+          "stft_shape": [
+            1386,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1386,
+          "spectrograms": 1386,
+          "window_shape": [
+            1386,
+            6000
+          ],
+          "stft_shape": [
+            1386,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1386,
+          "spectrograms": 1386,
+          "window_shape": [
+            1386,
+            6000
+          ],
+          "stft_shape": [
+            1386,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8605,
+      "total_spectrograms": 8605
+    },
+    {
+      "date": "2023-02-27",
+      "file": "KO.GAZ.2023-02-27.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 692,
+          "spectrograms": 692,
+          "window_shape": [
+            692,
+            6000
+          ],
+          "stft_shape": [
+            692,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1376,
+          "spectrograms": 1376,
+          "window_shape": [
+            1376,
+            6000
+          ],
+          "stft_shape": [
+            1376,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8629,
+      "total_spectrograms": 8629
+    },
+    {
+      "date": "2023-02-28",
+      "file": "KO.GAZ.2023-02-28.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 992,
+          "spectrograms": 992,
+          "window_shape": [
+            992,
+            6000
+          ],
+          "stft_shape": [
+            992,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 992,
+          "spectrograms": 992,
+          "window_shape": [
+            992,
+            6000
+          ],
+          "stft_shape": [
+            992,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 992,
+          "spectrograms": 992,
+          "window_shape": [
+            992,
+            6000
+          ],
+          "stft_shape": [
+            992,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8517,
+      "total_spectrograms": 8517
+    },
+    {
+      "date": "2023-03-01",
+      "file": "KO.GAZ.2023-03-01.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 413,
+          "spectrograms": 413,
+          "window_shape": [
+            413,
+            6000
+          ],
+          "stft_shape": [
+            413,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 404,
+          "spectrograms": 404,
+          "window_shape": [
+            404,
+            6000
+          ],
+          "stft_shape": [
+            404,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 404,
+          "spectrograms": 404,
+          "window_shape": [
+            404,
+            6000
+          ],
+          "stft_shape": [
+            404,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8590,
+      "total_spectrograms": 8590
+    },
+    {
+      "date": "2023-03-02",
+      "file": "KO.GAZ.2023-03-02.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 738,
+          "spectrograms": 738,
+          "window_shape": [
+            738,
+            6000
+          ],
+          "stft_shape": [
+            738,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1138,
+          "spectrograms": 1138,
+          "window_shape": [
+            1138,
+            6000
+          ],
+          "stft_shape": [
+            1138,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 2483,
+          "spectrograms": 2483,
+          "window_shape": [
+            2483,
+            6000
+          ],
+          "stft_shape": [
+            2483,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8618,
+      "total_spectrograms": 8618
+    },
+    {
+      "date": "2023-03-03",
+      "file": "KO.GAZ.2023-03-03.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 314,
+          "spectrograms": 314,
+          "window_shape": [
+            314,
+            6000
+          ],
+          "stft_shape": [
+            314,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 314,
+          "spectrograms": 314,
+          "window_shape": [
+            314,
+            6000
+          ],
+          "stft_shape": [
+            314,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 264,
+          "spectrograms": 264,
+          "window_shape": [
+            264,
+            6000
+          ],
+          "stft_shape": [
+            264,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8553,
+      "total_spectrograms": 8553
+    },
+    {
+      "date": "2023-03-04",
+      "file": "KO.GAZ.2023-03-04.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1991,
+          "spectrograms": 1991,
+          "window_shape": [
+            1991,
+            6000
+          ],
+          "stft_shape": [
+            1991,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 639,
+          "spectrograms": 639,
+          "window_shape": [
+            639,
+            6000
+          ],
+          "stft_shape": [
+            639,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8633,
+      "total_spectrograms": 8633
+    },
+    {
+      "date": "2023-03-05",
+      "file": "KO.GAZ.2023-03-05.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1463,
+          "spectrograms": 1463,
+          "window_shape": [
+            1463,
+            6000
+          ],
+          "stft_shape": [
+            1463,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8635,
+      "total_spectrograms": 8635
+    },
+    {
+      "date": "2023-03-06",
+      "file": "KO.GAZ.2023-03-06.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1703,
+          "spectrograms": 1703,
+          "window_shape": [
+            1703,
+            6000
+          ],
+          "stft_shape": [
+            1703,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1703,
+          "spectrograms": 1703,
+          "window_shape": [
+            1703,
+            6000
+          ],
+          "stft_shape": [
+            1703,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1634,
+          "spectrograms": 1634,
+          "window_shape": [
+            1634,
+            6000
+          ],
+          "stft_shape": [
+            1634,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8628,
+      "total_spectrograms": 8628
+    },
+    {
+      "date": "2023-03-07",
+      "file": "KO.GAZ.2023-03-07.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 31,
+          "spectrograms": 31,
+          "window_shape": [
+            31,
+            6000
+          ],
+          "stft_shape": [
+            31,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 645,
+          "spectrograms": 645,
+          "window_shape": [
+            645,
+            6000
+          ],
+          "stft_shape": [
+            645,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 645,
+          "spectrograms": 645,
+          "window_shape": [
+            645,
+            6000
+          ],
+          "stft_shape": [
+            645,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8617,
+      "total_spectrograms": 8617
+    },
+    {
+      "date": "2023-03-08",
+      "file": "KO.GAZ.2023-03-08.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 13,
+          "spectrograms": 13,
+          "window_shape": [
+            13,
+            6000
+          ],
+          "stft_shape": [
+            13,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 13,
+          "spectrograms": 13,
+          "window_shape": [
+            13,
+            6000
+          ],
+          "stft_shape": [
+            13,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 13,
+          "spectrograms": 13,
+          "window_shape": [
+            13,
+            6000
+          ],
+          "stft_shape": [
+            13,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8394,
+      "total_spectrograms": 8394
+    },
+    {
+      "date": "2023-03-09",
+      "file": "KO.GAZ.2023-03-09.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 681,
+          "spectrograms": 681,
+          "window_shape": [
+            681,
+            6000
+          ],
+          "stft_shape": [
+            681,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 681,
+          "spectrograms": 681,
+          "window_shape": [
+            681,
+            6000
+          ],
+          "stft_shape": [
+            681,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 681,
+          "spectrograms": 681,
+          "window_shape": [
+            681,
+            6000
+          ],
+          "stft_shape": [
+            681,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8616,
+      "total_spectrograms": 8616
+    },
+    {
+      "date": "2023-03-10",
+      "file": "KO.GAZ.2023-03-10.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1675,
+          "spectrograms": 1675,
+          "window_shape": [
+            1675,
+            6000
+          ],
+          "stft_shape": [
+            1675,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1401,
+          "spectrograms": 1401,
+          "window_shape": [
+            1401,
+            6000
+          ],
+          "stft_shape": [
+            1401,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1675,
+          "spectrograms": 1675,
+          "window_shape": [
+            1675,
+            6000
+          ],
+          "stft_shape": [
+            1675,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8596,
+      "total_spectrograms": 8596
+    },
+    {
+      "date": "2023-03-11",
+      "file": "KO.GAZ.2023-03-11.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1000,
+          "spectrograms": 1000,
+          "window_shape": [
+            1000,
+            6000
+          ],
+          "stft_shape": [
+            1000,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1573,
+          "spectrograms": 1573,
+          "window_shape": [
+            1573,
+            6000
+          ],
+          "stft_shape": [
+            1573,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 576,
+          "spectrograms": 576,
+          "window_shape": [
+            576,
+            6000
+          ],
+          "stft_shape": [
+            576,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8627,
+      "total_spectrograms": 8627
+    },
+    {
+      "date": "2023-03-12",
+      "file": "KO.GAZ.2023-03-12.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1883,
+          "spectrograms": 1883,
+          "window_shape": [
+            1883,
+            6000
+          ],
+          "stft_shape": [
+            1883,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8635,
+      "total_spectrograms": 8635
+    },
+    {
+      "date": "2023-03-13",
+      "file": "KO.GAZ.2023-03-13.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1190,
+          "spectrograms": 1190,
+          "window_shape": [
+            1190,
+            6000
+          ],
+          "stft_shape": [
+            1190,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1190,
+          "spectrograms": 1190,
+          "window_shape": [
+            1190,
+            6000
+          ],
+          "stft_shape": [
+            1190,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1190,
+          "spectrograms": 1190,
+          "window_shape": [
+            1190,
+            6000
+          ],
+          "stft_shape": [
+            1190,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8575,
+      "total_spectrograms": 8575
+    },
+    {
+      "date": "2023-03-14",
+      "file": "KO.GAZ.2023-03-14.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 2141,
+          "spectrograms": 2141,
+          "window_shape": [
+            2141,
+            6000
+          ],
+          "stft_shape": [
+            2141,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1425,
+          "spectrograms": 1425,
+          "window_shape": [
+            1425,
+            6000
+          ],
+          "stft_shape": [
+            1425,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 2141,
+          "spectrograms": 2141,
+          "window_shape": [
+            2141,
+            6000
+          ],
+          "stft_shape": [
+            2141,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8623,
+      "total_spectrograms": 8623
+    },
+    {
+      "date": "2023-03-15",
+      "file": "KO.GAZ.2023-03-15.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1615,
+          "spectrograms": 1615,
+          "window_shape": [
+            1615,
+            6000
+          ],
+          "stft_shape": [
+            1615,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1615,
+          "spectrograms": 1615,
+          "window_shape": [
+            1615,
+            6000
+          ],
+          "stft_shape": [
+            1615,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1615,
+          "spectrograms": 1615,
+          "window_shape": [
+            1615,
+            6000
+          ],
+          "stft_shape": [
+            1615,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8629,
+      "total_spectrograms": 8629
+    },
+    {
+      "date": "2023-03-16",
+      "file": "KO.GAZ.2023-03-16.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 599,
+          "spectrograms": 599,
+          "window_shape": [
+            599,
+            6000
+          ],
+          "stft_shape": [
+            599,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1192,
+          "spectrograms": 1192,
+          "window_shape": [
+            1192,
+            6000
+          ],
+          "stft_shape": [
+            1192,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1054,
+          "spectrograms": 1054,
+          "window_shape": [
+            1054,
+            6000
+          ],
+          "stft_shape": [
+            1054,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8590,
+      "total_spectrograms": 8590
+    },
+    {
+      "date": "2023-03-17",
+      "file": "KO.GAZ.2023-03-17.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1678,
+          "spectrograms": 1678,
+          "window_shape": [
+            1678,
+            6000
+          ],
+          "stft_shape": [
+            1678,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1678,
+          "spectrograms": 1678,
+          "window_shape": [
+            1678,
+            6000
+          ],
+          "stft_shape": [
+            1678,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1667,
+          "spectrograms": 1667,
+          "window_shape": [
+            1667,
+            6000
+          ],
+          "stft_shape": [
+            1667,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8598,
+      "total_spectrograms": 8598
+    },
+    {
+      "date": "2023-03-18",
+      "file": "KO.GAZ.2023-03-18.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 262,
+          "spectrograms": 262,
+          "window_shape": [
+            262,
+            6000
+          ],
+          "stft_shape": [
+            262,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 262,
+          "spectrograms": 262,
+          "window_shape": [
+            262,
+            6000
+          ],
+          "stft_shape": [
+            262,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 377,
+          "spectrograms": 377,
+          "window_shape": [
+            377,
+            6000
+          ],
+          "stft_shape": [
+            377,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8589,
+      "total_spectrograms": 8589
+    },
+    {
+      "date": "2023-03-19",
+      "file": "KO.GAZ.2023-03-19.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1071,
+          "spectrograms": 1071,
+          "window_shape": [
+            1071,
+            6000
+          ],
+          "stft_shape": [
+            1071,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8635,
+      "total_spectrograms": 8635
+    },
+    {
+      "date": "2023-03-20",
+      "file": "KO.GAZ.2023-03-20.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1059,
+          "spectrograms": 1059,
+          "window_shape": [
+            1059,
+            6000
+          ],
+          "stft_shape": [
+            1059,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1059,
+          "spectrograms": 1059,
+          "window_shape": [
+            1059,
+            6000
+          ],
+          "stft_shape": [
+            1059,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1059,
+          "spectrograms": 1059,
+          "window_shape": [
+            1059,
+            6000
+          ],
+          "stft_shape": [
+            1059,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8608,
+      "total_spectrograms": 8608
+    },
+    {
+      "date": "2023-03-21",
+      "file": "KO.GAZ.2023-03-21.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1840,
+          "spectrograms": 1840,
+          "window_shape": [
+            1840,
+            6000
+          ],
+          "stft_shape": [
+            1840,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1873,
+          "spectrograms": 1873,
+          "window_shape": [
+            1873,
+            6000
+          ],
+          "stft_shape": [
+            1873,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1873,
+          "spectrograms": 1873,
+          "window_shape": [
+            1873,
+            6000
+          ],
+          "stft_shape": [
+            1873,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8618,
+      "total_spectrograms": 8618
+    },
+    {
+      "date": "2023-03-22",
+      "file": "KO.GAZ.2023-03-22.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 511,
+          "spectrograms": 511,
+          "window_shape": [
+            511,
+            6000
+          ],
+          "stft_shape": [
+            511,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8635,
+      "total_spectrograms": 8635
+    },
+    {
+      "date": "2023-03-23",
+      "file": "KO.GAZ.2023-03-23.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 575,
+          "spectrograms": 575,
+          "window_shape": [
+            575,
+            6000
+          ],
+          "stft_shape": [
+            575,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1255,
+          "spectrograms": 1255,
+          "window_shape": [
+            1255,
+            6000
+          ],
+          "stft_shape": [
+            1255,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1745,
+          "spectrograms": 1745,
+          "window_shape": [
+            1745,
+            6000
+          ],
+          "stft_shape": [
+            1745,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8627,
+      "total_spectrograms": 8627
+    },
+    {
+      "date": "2023-03-24",
+      "file": "KO.GAZ.2023-03-24.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1666,
+          "spectrograms": 1666,
+          "window_shape": [
+            1666,
+            6000
+          ],
+          "stft_shape": [
+            1666,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1666,
+          "spectrograms": 1666,
+          "window_shape": [
+            1666,
+            6000
+          ],
+          "stft_shape": [
+            1666,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1666,
+          "spectrograms": 1666,
+          "window_shape": [
+            1666,
+            6000
+          ],
+          "stft_shape": [
+            1666,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8617,
+      "total_spectrograms": 8617
+    },
+    {
+      "date": "2023-03-25",
+      "file": "KO.GAZ.2023-03-25.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1247,
+          "spectrograms": 1247,
+          "window_shape": [
+            1247,
+            6000
+          ],
+          "stft_shape": [
+            1247,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8635,
+      "total_spectrograms": 8635
+    },
+    {
+      "date": "2023-03-26",
+      "file": "KO.GAZ.2023-03-26.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1605,
+          "spectrograms": 1605,
+          "window_shape": [
+            1605,
+            6000
+          ],
+          "stft_shape": [
+            1605,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1605,
+          "spectrograms": 1605,
+          "window_shape": [
+            1605,
+            6000
+          ],
+          "stft_shape": [
+            1605,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1506,
+          "spectrograms": 1506,
+          "window_shape": [
+            1506,
+            6000
+          ],
+          "stft_shape": [
+            1506,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8195,
+      "total_spectrograms": 8195
+    },
+    {
+      "date": "2023-03-27",
+      "file": "KO.GAZ.2023-03-27.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1163,
+          "spectrograms": 1163,
+          "window_shape": [
+            1163,
+            6000
+          ],
+          "stft_shape": [
+            1163,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1163,
+          "spectrograms": 1163,
+          "window_shape": [
+            1163,
+            6000
+          ],
+          "stft_shape": [
+            1163,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1983,
+          "spectrograms": 1983,
+          "window_shape": [
+            1983,
+            6000
+          ],
+          "stft_shape": [
+            1983,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8622,
+      "total_spectrograms": 8622
+    },
+    {
+      "date": "2023-03-28",
+      "file": "KO.GAZ.2023-03-28.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1273,
+          "spectrograms": 1273,
+          "window_shape": [
+            1273,
+            6000
+          ],
+          "stft_shape": [
+            1273,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1273,
+          "spectrograms": 1273,
+          "window_shape": [
+            1273,
+            6000
+          ],
+          "stft_shape": [
+            1273,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1273,
+          "spectrograms": 1273,
+          "window_shape": [
+            1273,
+            6000
+          ],
+          "stft_shape": [
+            1273,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8618,
+      "total_spectrograms": 8618
+    },
+    {
+      "date": "2023-03-29",
+      "file": "KO.GAZ.2023-03-29.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1792,
+          "spectrograms": 1792,
+          "window_shape": [
+            1792,
+            6000
+          ],
+          "stft_shape": [
+            1792,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1422,
+          "spectrograms": 1422,
+          "window_shape": [
+            1422,
+            6000
+          ],
+          "stft_shape": [
+            1422,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8633,
+      "total_spectrograms": 8633
+    },
+    {
+      "date": "2023-03-30",
+      "file": "KO.GAZ.2023-03-30.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 2626,
+          "spectrograms": 2626,
+          "window_shape": [
+            2626,
+            6000
+          ],
+          "stft_shape": [
+            2626,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 2626,
+          "spectrograms": 2626,
+          "window_shape": [
+            2626,
+            6000
+          ],
+          "stft_shape": [
+            2626,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 2626,
+          "spectrograms": 2626,
+          "window_shape": [
+            2626,
+            6000
+          ],
+          "stft_shape": [
+            2626,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8628,
+      "total_spectrograms": 8628
+    },
+    {
+      "date": "2023-03-31",
+      "file": "KO.GAZ.2023-03-31.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1249,
+          "spectrograms": 1249,
+          "window_shape": [
+            1249,
+            6000
+          ],
+          "stft_shape": [
+            1249,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1670,
+          "spectrograms": 1670,
+          "window_shape": [
+            1670,
+            6000
+          ],
+          "stft_shape": [
+            1670,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1690,
+          "spectrograms": 1690,
+          "window_shape": [
+            1690,
+            6000
+          ],
+          "stft_shape": [
+            1690,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8582,
+      "total_spectrograms": 8582
+    },
+    {
+      "date": "2023-04-01",
+      "file": "KO.GAZ.2023-04-01.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8637,
+      "total_spectrograms": 8637
+    },
+    {
+      "date": "2023-04-02",
+      "file": "KO.GAZ.2023-04-02.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 2011,
+          "spectrograms": 2011,
+          "window_shape": [
+            2011,
+            6000
+          ],
+          "stft_shape": [
+            2011,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8635,
+      "total_spectrograms": 8635
+    },
+    {
+      "date": "2023-04-03",
+      "file": "KO.GAZ.2023-04-03.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 199,
+          "spectrograms": 199,
+          "window_shape": [
+            199,
+            6000
+          ],
+          "stft_shape": [
+            199,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 172,
+          "spectrograms": 172,
+          "window_shape": [
+            172,
+            6000
+          ],
+          "stft_shape": [
+            172,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 199,
+          "spectrograms": 199,
+          "window_shape": [
+            199,
+            6000
+          ],
+          "stft_shape": [
+            199,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8580,
+      "total_spectrograms": 8580
+    },
+    {
+      "date": "2023-04-04",
+      "file": "KO.GAZ.2023-04-04.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 95,
+          "spectrograms": 95,
+          "window_shape": [
+            95,
+            6000
+          ],
+          "stft_shape": [
+            95,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 269,
+          "spectrograms": 269,
+          "window_shape": [
+            269,
+            6000
+          ],
+          "stft_shape": [
+            269,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 84,
+          "spectrograms": 84,
+          "window_shape": [
+            84,
+            6000
+          ],
+          "stft_shape": [
+            84,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8577,
+      "total_spectrograms": 8577
+    },
+    {
+      "date": "2023-04-05",
+      "file": "KO.GAZ.2023-04-05.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 791,
+          "spectrograms": 791,
+          "window_shape": [
+            791,
+            6000
+          ],
+          "stft_shape": [
+            791,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1110,
+          "spectrograms": 1110,
+          "window_shape": [
+            1110,
+            6000
+          ],
+          "stft_shape": [
+            1110,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 489,
+          "spectrograms": 489,
+          "window_shape": [
+            489,
+            6000
+          ],
+          "stft_shape": [
+            489,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8595,
+      "total_spectrograms": 8595
+    },
+    {
+      "date": "2023-04-06",
+      "file": "KO.GAZ.2023-04-06.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 163,
+          "spectrograms": 163,
+          "window_shape": [
+            163,
+            6000
+          ],
+          "stft_shape": [
+            163,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 123,
+          "spectrograms": 123,
+          "window_shape": [
+            123,
+            6000
+          ],
+          "stft_shape": [
+            123,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 6,
+          "spectrograms": 6,
+          "window_shape": [
+            6,
+            6000
+          ],
+          "stft_shape": [
+            6,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8588,
+      "total_spectrograms": 8588
+    },
+    {
+      "date": "2023-04-07",
+      "file": "KO.GAZ.2023-04-07.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 19,
+          "spectrograms": 19,
+          "window_shape": [
+            19,
+            6000
+          ],
+          "stft_shape": [
+            19,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 879,
+          "spectrograms": 879,
+          "window_shape": [
+            879,
+            6000
+          ],
+          "stft_shape": [
+            879,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 326,
+          "spectrograms": 326,
+          "window_shape": [
+            326,
+            6000
+          ],
+          "stft_shape": [
+            326,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8557,
+      "total_spectrograms": 8557
+    },
+    {
+      "date": "2023-04-08",
+      "file": "KO.GAZ.2023-04-08.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 427,
+          "spectrograms": 427,
+          "window_shape": [
+            427,
+            6000
+          ],
+          "stft_shape": [
+            427,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 456,
+          "spectrograms": 456,
+          "window_shape": [
+            456,
+            6000
+          ],
+          "stft_shape": [
+            456,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 2189,
+          "spectrograms": 2189,
+          "window_shape": [
+            2189,
+            6000
+          ],
+          "stft_shape": [
+            2189,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8606,
+      "total_spectrograms": 8606
+    },
+    {
+      "date": "2023-04-09",
+      "file": "KO.GAZ.2023-04-09.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 460,
+          "spectrograms": 460,
+          "window_shape": [
+            460,
+            6000
+          ],
+          "stft_shape": [
+            460,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1250,
+          "spectrograms": 1250,
+          "window_shape": [
+            1250,
+            6000
+          ],
+          "stft_shape": [
+            1250,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 308,
+          "spectrograms": 308,
+          "window_shape": [
+            308,
+            6000
+          ],
+          "stft_shape": [
+            308,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8591,
+      "total_spectrograms": 8591
+    },
+    {
+      "date": "2023-04-10",
+      "file": "KO.GAZ.2023-04-10.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1099,
+          "spectrograms": 1099,
+          "window_shape": [
+            1099,
+            6000
+          ],
+          "stft_shape": [
+            1099,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 541,
+          "spectrograms": 541,
+          "window_shape": [
+            541,
+            6000
+          ],
+          "stft_shape": [
+            541,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 466,
+          "spectrograms": 466,
+          "window_shape": [
+            466,
+            6000
+          ],
+          "stft_shape": [
+            466,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8604,
+      "total_spectrograms": 8604
+    },
+    {
+      "date": "2023-04-11",
+      "file": "KO.GAZ.2023-04-11.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 382,
+          "spectrograms": 382,
+          "window_shape": [
+            382,
+            6000
+          ],
+          "stft_shape": [
+            382,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 252,
+          "spectrograms": 252,
+          "window_shape": [
+            252,
+            6000
+          ],
+          "stft_shape": [
+            252,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 6,
+          "spectrograms": 6,
+          "window_shape": [
+            6,
+            6000
+          ],
+          "stft_shape": [
+            6,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8563,
+      "total_spectrograms": 8563
+    },
+    {
+      "date": "2023-04-12",
+      "file": "KO.GAZ.2023-04-12.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 354,
+          "spectrograms": 354,
+          "window_shape": [
+            354,
+            6000
+          ],
+          "stft_shape": [
+            354,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 21,
+          "spectrograms": 21,
+          "window_shape": [
+            21,
+            6000
+          ],
+          "stft_shape": [
+            21,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 241,
+          "spectrograms": 241,
+          "window_shape": [
+            241,
+            6000
+          ],
+          "stft_shape": [
+            241,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8560,
+      "total_spectrograms": 8560
+    },
+    {
+      "date": "2023-04-13",
+      "file": "KO.GAZ.2023-04-13.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 235,
+          "spectrograms": 235,
+          "window_shape": [
+            235,
+            6000
+          ],
+          "stft_shape": [
+            235,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 56,
+          "spectrograms": 56,
+          "window_shape": [
+            56,
+            6000
+          ],
+          "stft_shape": [
+            56,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 38,
+          "spectrograms": 38,
+          "window_shape": [
+            38,
+            6000
+          ],
+          "stft_shape": [
+            38,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8029,
+      "total_spectrograms": 8029
+    },
+    {
+      "date": "2023-04-14",
+      "file": "KO.GAZ.2023-04-14.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 404,
+          "spectrograms": 404,
+          "window_shape": [
+            404,
+            6000
+          ],
+          "stft_shape": [
+            404,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 111,
+          "spectrograms": 111,
+          "window_shape": [
+            111,
+            6000
+          ],
+          "stft_shape": [
+            111,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1248,
+          "spectrograms": 1248,
+          "window_shape": [
+            1248,
+            6000
+          ],
+          "stft_shape": [
+            1248,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8526,
+      "total_spectrograms": 8526
+    },
+    {
+      "date": "2023-04-15",
+      "file": "KO.GAZ.2023-04-15.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 36,
+          "spectrograms": 36,
+          "window_shape": [
+            36,
+            6000
+          ],
+          "stft_shape": [
+            36,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 2,
+          "spectrograms": 2,
+          "window_shape": [
+            2,
+            6000
+          ],
+          "stft_shape": [
+            2,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 553,
+          "spectrograms": 553,
+          "window_shape": [
+            553,
+            6000
+          ],
+          "stft_shape": [
+            553,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8582,
+      "total_spectrograms": 8582
+    },
+    {
+      "date": "2023-04-16",
+      "file": "KO.GAZ.2023-04-16.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 16,
+          "spectrograms": 16,
+          "window_shape": [
+            16,
+            6000
+          ],
+          "stft_shape": [
+            16,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1,
+          "spectrograms": 1,
+          "window_shape": [
+            1,
+            6000
+          ],
+          "stft_shape": [
+            1,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 364,
+          "spectrograms": 364,
+          "window_shape": [
+            364,
+            6000
+          ],
+          "stft_shape": [
+            364,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8596,
+      "total_spectrograms": 8596
+    },
+    {
+      "date": "2023-04-17",
+      "file": "KO.GAZ.2023-04-17.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 247,
+          "spectrograms": 247,
+          "window_shape": [
+            247,
+            6000
+          ],
+          "stft_shape": [
+            247,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 968,
+          "spectrograms": 968,
+          "window_shape": [
+            968,
+            6000
+          ],
+          "stft_shape": [
+            968,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 405,
+          "spectrograms": 405,
+          "window_shape": [
+            405,
+            6000
+          ],
+          "stft_shape": [
+            405,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8451,
+      "total_spectrograms": 8451
+    },
+    {
+      "date": "2023-04-18",
+      "file": "KO.GAZ.2023-04-18.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 502,
+          "spectrograms": 502,
+          "window_shape": [
+            502,
+            6000
+          ],
+          "stft_shape": [
+            502,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 446,
+          "spectrograms": 446,
+          "window_shape": [
+            446,
+            6000
+          ],
+          "stft_shape": [
+            446,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 861,
+          "spectrograms": 861,
+          "window_shape": [
+            861,
+            6000
+          ],
+          "stft_shape": [
+            861,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8588,
+      "total_spectrograms": 8588
+    },
+    {
+      "date": "2023-04-19",
+      "file": "KO.GAZ.2023-04-19.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 191,
+          "spectrograms": 191,
+          "window_shape": [
+            191,
+            6000
+          ],
+          "stft_shape": [
+            191,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 179,
+          "spectrograms": 179,
+          "window_shape": [
+            179,
+            6000
+          ],
+          "stft_shape": [
+            179,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1575,
+          "spectrograms": 1575,
+          "window_shape": [
+            1575,
+            6000
+          ],
+          "stft_shape": [
+            1575,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8594,
+      "total_spectrograms": 8594
+    },
+    {
+      "date": "2023-04-20",
+      "file": "KO.GAZ.2023-04-20.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 192,
+          "spectrograms": 192,
+          "window_shape": [
+            192,
+            6000
+          ],
+          "stft_shape": [
+            192,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 17,
+          "spectrograms": 17,
+          "window_shape": [
+            17,
+            6000
+          ],
+          "stft_shape": [
+            17,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 387,
+          "spectrograms": 387,
+          "window_shape": [
+            387,
+            6000
+          ],
+          "stft_shape": [
+            387,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8538,
+      "total_spectrograms": 8538
+    },
+    {
+      "date": "2023-04-21",
+      "file": "KO.GAZ.2023-04-21.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 102,
+          "spectrograms": 102,
+          "window_shape": [
+            102,
+            6000
+          ],
+          "stft_shape": [
+            102,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 145,
+          "spectrograms": 145,
+          "window_shape": [
+            145,
+            6000
+          ],
+          "stft_shape": [
+            145,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1253,
+          "spectrograms": 1253,
+          "window_shape": [
+            1253,
+            6000
+          ],
+          "stft_shape": [
+            1253,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8551,
+      "total_spectrograms": 8551
+    },
+    {
+      "date": "2023-04-22",
+      "file": "KO.GAZ.2023-04-22.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 585,
+          "spectrograms": 585,
+          "window_shape": [
+            585,
+            6000
+          ],
+          "stft_shape": [
+            585,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 285,
+          "spectrograms": 285,
+          "window_shape": [
+            285,
+            6000
+          ],
+          "stft_shape": [
+            285,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 250,
+          "spectrograms": 250,
+          "window_shape": [
+            250,
+            6000
+          ],
+          "stft_shape": [
+            250,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8600,
+      "total_spectrograms": 8600
+    },
+    {
+      "date": "2023-04-23",
+      "file": "KO.GAZ.2023-04-23.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 712,
+          "spectrograms": 712,
+          "window_shape": [
+            712,
+            6000
+          ],
+          "stft_shape": [
+            712,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 342,
+          "spectrograms": 342,
+          "window_shape": [
+            342,
+            6000
+          ],
+          "stft_shape": [
+            342,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 832,
+          "spectrograms": 832,
+          "window_shape": [
+            832,
+            6000
+          ],
+          "stft_shape": [
+            832,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8567,
+      "total_spectrograms": 8567
+    },
+    {
+      "date": "2023-04-24",
+      "file": "KO.GAZ.2023-04-24.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 615,
+          "spectrograms": 615,
+          "window_shape": [
+            615,
+            6000
+          ],
+          "stft_shape": [
+            615,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 287,
+          "spectrograms": 287,
+          "window_shape": [
+            287,
+            6000
+          ],
+          "stft_shape": [
+            287,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 566,
+          "spectrograms": 566,
+          "window_shape": [
+            566,
+            6000
+          ],
+          "stft_shape": [
+            566,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8600,
+      "total_spectrograms": 8600
+    },
+    {
+      "date": "2023-04-25",
+      "file": "KO.GAZ.2023-04-25.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 250,
+          "spectrograms": 250,
+          "window_shape": [
+            250,
+            6000
+          ],
+          "stft_shape": [
+            250,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1838,
+          "spectrograms": 1838,
+          "window_shape": [
+            1838,
+            6000
+          ],
+          "stft_shape": [
+            1838,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1332,
+          "spectrograms": 1332,
+          "window_shape": [
+            1332,
+            6000
+          ],
+          "stft_shape": [
+            1332,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8599,
+      "total_spectrograms": 8599
+    },
+    {
+      "date": "2023-04-26",
+      "file": "KO.GAZ.2023-04-26.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 718,
+          "spectrograms": 718,
+          "window_shape": [
+            718,
+            6000
+          ],
+          "stft_shape": [
+            718,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 58,
+          "spectrograms": 58,
+          "window_shape": [
+            58,
+            6000
+          ],
+          "stft_shape": [
+            58,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 711,
+          "spectrograms": 711,
+          "window_shape": [
+            711,
+            6000
+          ],
+          "stft_shape": [
+            711,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8597,
+      "total_spectrograms": 8597
+    },
+    {
+      "date": "2023-04-27",
+      "file": "KO.GAZ.2023-04-27.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 52,
+          "spectrograms": 52,
+          "window_shape": [
+            52,
+            6000
+          ],
+          "stft_shape": [
+            52,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 176,
+          "spectrograms": 176,
+          "window_shape": [
+            176,
+            6000
+          ],
+          "stft_shape": [
+            176,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 868,
+          "spectrograms": 868,
+          "window_shape": [
+            868,
+            6000
+          ],
+          "stft_shape": [
+            868,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8582,
+      "total_spectrograms": 8582
+    },
+    {
+      "date": "2023-04-28",
+      "file": "KO.GAZ.2023-04-28.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 165,
+          "spectrograms": 165,
+          "window_shape": [
+            165,
+            6000
+          ],
+          "stft_shape": [
+            165,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 19,
+          "spectrograms": 19,
+          "window_shape": [
+            19,
+            6000
+          ],
+          "stft_shape": [
+            19,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 628,
+          "spectrograms": 628,
+          "window_shape": [
+            628,
+            6000
+          ],
+          "stft_shape": [
+            628,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8551,
+      "total_spectrograms": 8551
+    },
+    {
+      "date": "2023-04-29",
+      "file": "KO.GAZ.2023-04-29.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 452,
+          "spectrograms": 452,
+          "window_shape": [
+            452,
+            6000
+          ],
+          "stft_shape": [
+            452,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 132,
+          "spectrograms": 132,
+          "window_shape": [
+            132,
+            6000
+          ],
+          "stft_shape": [
+            132,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 608,
+          "spectrograms": 608,
+          "window_shape": [
+            608,
+            6000
+          ],
+          "stft_shape": [
+            608,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8591,
+      "total_spectrograms": 8591
+    },
+    {
+      "date": "2023-04-30",
+      "file": "KO.GAZ.2023-04-30.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 331,
+          "spectrograms": 331,
+          "window_shape": [
+            331,
+            6000
+          ],
+          "stft_shape": [
+            331,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 614,
+          "spectrograms": 614,
+          "window_shape": [
+            614,
+            6000
+          ],
+          "stft_shape": [
+            614,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 126,
+          "spectrograms": 126,
+          "window_shape": [
+            126,
+            6000
+          ],
+          "stft_shape": [
+            126,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8602,
+      "total_spectrograms": 8602
+    },
+    {
+      "date": "2023-05-01",
+      "file": "KO.GAZ.2023-05-01.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 23,
+          "spectrograms": 23,
+          "window_shape": [
+            23,
+            6000
+          ],
+          "stft_shape": [
+            23,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1009,
+          "spectrograms": 1009,
+          "window_shape": [
+            1009,
+            6000
+          ],
+          "stft_shape": [
+            1009,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 338,
+          "spectrograms": 338,
+          "window_shape": [
+            338,
+            6000
+          ],
+          "stft_shape": [
+            338,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8596,
+      "total_spectrograms": 8596
+    },
+    {
+      "date": "2023-05-02",
+      "file": "KO.GAZ.2023-05-02.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 493,
+          "spectrograms": 493,
+          "window_shape": [
+            493,
+            6000
+          ],
+          "stft_shape": [
+            493,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 88,
+          "spectrograms": 88,
+          "window_shape": [
+            88,
+            6000
+          ],
+          "stft_shape": [
+            88,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 194,
+          "spectrograms": 194,
+          "window_shape": [
+            194,
+            6000
+          ],
+          "stft_shape": [
+            194,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8604,
+      "total_spectrograms": 8604
+    },
+    {
+      "date": "2023-05-03",
+      "file": "KO.GAZ.2023-05-03.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 874,
+          "spectrograms": 874,
+          "window_shape": [
+            874,
+            6000
+          ],
+          "stft_shape": [
+            874,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 621,
+          "spectrograms": 621,
+          "window_shape": [
+            621,
+            6000
+          ],
+          "stft_shape": [
+            621,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 2141,
+          "spectrograms": 2141,
+          "window_shape": [
+            2141,
+            6000
+          ],
+          "stft_shape": [
+            2141,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8601,
+      "total_spectrograms": 8601
+    },
+    {
+      "date": "2023-05-04",
+      "file": "KO.GAZ.2023-05-04.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 62,
+          "spectrograms": 62,
+          "window_shape": [
+            62,
+            6000
+          ],
+          "stft_shape": [
+            62,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 815,
+          "spectrograms": 815,
+          "window_shape": [
+            815,
+            6000
+          ],
+          "stft_shape": [
+            815,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 608,
+          "spectrograms": 608,
+          "window_shape": [
+            608,
+            6000
+          ],
+          "stft_shape": [
+            608,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8583,
+      "total_spectrograms": 8583
+    },
+    {
+      "date": "2023-05-05",
+      "file": "KO.GAZ.2023-05-05.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 57,
+          "spectrograms": 57,
+          "window_shape": [
+            57,
+            6000
+          ],
+          "stft_shape": [
+            57,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 140,
+          "spectrograms": 140,
+          "window_shape": [
+            140,
+            6000
+          ],
+          "stft_shape": [
+            140,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 911,
+          "spectrograms": 911,
+          "window_shape": [
+            911,
+            6000
+          ],
+          "stft_shape": [
+            911,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 5137,
+      "total_spectrograms": 5137
+    },
+    {
+      "date": "2023-05-06",
+      "file": "KO.GAZ.2023-05-06.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 75,
+          "spectrograms": 75,
+          "window_shape": [
+            75,
+            6000
+          ],
+          "stft_shape": [
+            75,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 179,
+          "spectrograms": 179,
+          "window_shape": [
+            179,
+            6000
+          ],
+          "stft_shape": [
+            179,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 609,
+          "spectrograms": 609,
+          "window_shape": [
+            609,
+            6000
+          ],
+          "stft_shape": [
+            609,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8495,
+      "total_spectrograms": 8495
+    },
+    {
+      "date": "2023-05-07",
+      "file": "KO.GAZ.2023-05-07.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 794,
+          "spectrograms": 794,
+          "window_shape": [
+            794,
+            6000
+          ],
+          "stft_shape": [
+            794,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 646,
+          "spectrograms": 646,
+          "window_shape": [
+            646,
+            6000
+          ],
+          "stft_shape": [
+            646,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 54,
+          "spectrograms": 54,
+          "window_shape": [
+            54,
+            6000
+          ],
+          "stft_shape": [
+            54,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8522,
+      "total_spectrograms": 8522
+    },
+    {
+      "date": "2023-05-08",
+      "file": "KO.GAZ.2023-05-08.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 118,
+          "spectrograms": 118,
+          "window_shape": [
+            118,
+            6000
+          ],
+          "stft_shape": [
+            118,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 326,
+          "spectrograms": 326,
+          "window_shape": [
+            326,
+            6000
+          ],
+          "stft_shape": [
+            326,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1190,
+          "spectrograms": 1190,
+          "window_shape": [
+            1190,
+            6000
+          ],
+          "stft_shape": [
+            1190,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8589,
+      "total_spectrograms": 8589
+    },
+    {
+      "date": "2023-05-09",
+      "file": "KO.GAZ.2023-05-09.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 470,
+          "spectrograms": 470,
+          "window_shape": [
+            470,
+            6000
+          ],
+          "stft_shape": [
+            470,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 78,
+          "spectrograms": 78,
+          "window_shape": [
+            78,
+            6000
+          ],
+          "stft_shape": [
+            78,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1262,
+          "spectrograms": 1262,
+          "window_shape": [
+            1262,
+            6000
+          ],
+          "stft_shape": [
+            1262,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8564,
+      "total_spectrograms": 8564
+    },
+    {
+      "date": "2023-05-10",
+      "file": "KO.GAZ.2023-05-10.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 313,
+          "spectrograms": 313,
+          "window_shape": [
+            313,
+            6000
+          ],
+          "stft_shape": [
+            313,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 39,
+          "spectrograms": 39,
+          "window_shape": [
+            39,
+            6000
+          ],
+          "stft_shape": [
+            39,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 666,
+          "spectrograms": 666,
+          "window_shape": [
+            666,
+            6000
+          ],
+          "stft_shape": [
+            666,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8578,
+      "total_spectrograms": 8578
+    },
+    {
+      "date": "2023-05-11",
+      "file": "KO.GAZ.2023-05-11.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 73,
+          "spectrograms": 73,
+          "window_shape": [
+            73,
+            6000
+          ],
+          "stft_shape": [
+            73,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 419,
+          "spectrograms": 419,
+          "window_shape": [
+            419,
+            6000
+          ],
+          "stft_shape": [
+            419,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 135,
+          "spectrograms": 135,
+          "window_shape": [
+            135,
+            6000
+          ],
+          "stft_shape": [
+            135,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8593,
+      "total_spectrograms": 8593
+    },
+    {
+      "date": "2023-05-12",
+      "file": "KO.GAZ.2023-05-12.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 684,
+          "spectrograms": 684,
+          "window_shape": [
+            684,
+            6000
+          ],
+          "stft_shape": [
+            684,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 875,
+          "spectrograms": 875,
+          "window_shape": [
+            875,
+            6000
+          ],
+          "stft_shape": [
+            875,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 409,
+          "spectrograms": 409,
+          "window_shape": [
+            409,
+            6000
+          ],
+          "stft_shape": [
+            409,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8528,
+      "total_spectrograms": 8528
+    },
+    {
+      "date": "2023-05-13",
+      "file": "KO.GAZ.2023-05-13.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1089,
+          "spectrograms": 1089,
+          "window_shape": [
+            1089,
+            6000
+          ],
+          "stft_shape": [
+            1089,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 115,
+          "spectrograms": 115,
+          "window_shape": [
+            115,
+            6000
+          ],
+          "stft_shape": [
+            115,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1060,
+          "spectrograms": 1060,
+          "window_shape": [
+            1060,
+            6000
+          ],
+          "stft_shape": [
+            1060,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8604,
+      "total_spectrograms": 8604
+    },
+    {
+      "date": "2023-05-14",
+      "file": "KO.GAZ.2023-05-14.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 253,
+          "spectrograms": 253,
+          "window_shape": [
+            253,
+            6000
+          ],
+          "stft_shape": [
+            253,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 436,
+          "spectrograms": 436,
+          "window_shape": [
+            436,
+            6000
+          ],
+          "stft_shape": [
+            436,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1959,
+          "spectrograms": 1959,
+          "window_shape": [
+            1959,
+            6000
+          ],
+          "stft_shape": [
+            1959,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8600,
+      "total_spectrograms": 8600
+    },
+    {
+      "date": "2023-05-15",
+      "file": "KO.GAZ.2023-05-15.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 126,
+          "spectrograms": 126,
+          "window_shape": [
+            126,
+            6000
+          ],
+          "stft_shape": [
+            126,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 78,
+          "spectrograms": 78,
+          "window_shape": [
+            78,
+            6000
+          ],
+          "stft_shape": [
+            78,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 721,
+          "spectrograms": 721,
+          "window_shape": [
+            721,
+            6000
+          ],
+          "stft_shape": [
+            721,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8600,
+      "total_spectrograms": 8600
+    },
+    {
+      "date": "2023-05-16",
+      "file": "KO.GAZ.2023-05-16.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 605,
+          "spectrograms": 605,
+          "window_shape": [
+            605,
+            6000
+          ],
+          "stft_shape": [
+            605,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1415,
+          "spectrograms": 1415,
+          "window_shape": [
+            1415,
+            6000
+          ],
+          "stft_shape": [
+            1415,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 957,
+          "spectrograms": 957,
+          "window_shape": [
+            957,
+            6000
+          ],
+          "stft_shape": [
+            957,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8610,
+      "total_spectrograms": 8610
+    },
+    {
+      "date": "2023-05-17",
+      "file": "KO.GAZ.2023-05-17.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 921,
+          "spectrograms": 921,
+          "window_shape": [
+            921,
+            6000
+          ],
+          "stft_shape": [
+            921,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 820,
+          "spectrograms": 820,
+          "window_shape": [
+            820,
+            6000
+          ],
+          "stft_shape": [
+            820,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1323,
+          "spectrograms": 1323,
+          "window_shape": [
+            1323,
+            6000
+          ],
+          "stft_shape": [
+            1323,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8521,
+      "total_spectrograms": 8521
+    },
+    {
+      "date": "2023-05-18",
+      "file": "KO.GAZ.2023-05-18.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 768,
+          "spectrograms": 768,
+          "window_shape": [
+            768,
+            6000
+          ],
+          "stft_shape": [
+            768,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 344,
+          "spectrograms": 344,
+          "window_shape": [
+            344,
+            6000
+          ],
+          "stft_shape": [
+            344,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 567,
+          "spectrograms": 567,
+          "window_shape": [
+            567,
+            6000
+          ],
+          "stft_shape": [
+            567,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8581,
+      "total_spectrograms": 8581
+    },
+    {
+      "date": "2023-05-19",
+      "file": "KO.GAZ.2023-05-19.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 106,
+          "spectrograms": 106,
+          "window_shape": [
+            106,
+            6000
+          ],
+          "stft_shape": [
+            106,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1555,
+          "spectrograms": 1555,
+          "window_shape": [
+            1555,
+            6000
+          ],
+          "stft_shape": [
+            1555,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1681,
+          "spectrograms": 1681,
+          "window_shape": [
+            1681,
+            6000
+          ],
+          "stft_shape": [
+            1681,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8576,
+      "total_spectrograms": 8576
+    },
+    {
+      "date": "2023-05-20",
+      "file": "KO.GAZ.2023-05-20.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 135,
+          "spectrograms": 135,
+          "window_shape": [
+            135,
+            6000
+          ],
+          "stft_shape": [
+            135,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 414,
+          "spectrograms": 414,
+          "window_shape": [
+            414,
+            6000
+          ],
+          "stft_shape": [
+            414,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 156,
+          "spectrograms": 156,
+          "window_shape": [
+            156,
+            6000
+          ],
+          "stft_shape": [
+            156,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8584,
+      "total_spectrograms": 8584
+    },
+    {
+      "date": "2023-05-21",
+      "file": "KO.GAZ.2023-05-21.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 378,
+          "spectrograms": 378,
+          "window_shape": [
+            378,
+            6000
+          ],
+          "stft_shape": [
+            378,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1097,
+          "spectrograms": 1097,
+          "window_shape": [
+            1097,
+            6000
+          ],
+          "stft_shape": [
+            1097,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 761,
+          "spectrograms": 761,
+          "window_shape": [
+            761,
+            6000
+          ],
+          "stft_shape": [
+            761,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8598,
+      "total_spectrograms": 8598
+    },
+    {
+      "date": "2023-05-22",
+      "file": "KO.GAZ.2023-05-22.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 65,
+          "spectrograms": 65,
+          "window_shape": [
+            65,
+            6000
+          ],
+          "stft_shape": [
+            65,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 770,
+          "spectrograms": 770,
+          "window_shape": [
+            770,
+            6000
+          ],
+          "stft_shape": [
+            770,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1242,
+          "spectrograms": 1242,
+          "window_shape": [
+            1242,
+            6000
+          ],
+          "stft_shape": [
+            1242,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8582,
+      "total_spectrograms": 8582
+    },
+    {
+      "date": "2023-05-23",
+      "file": "KO.GAZ.2023-05-23.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 59,
+          "spectrograms": 59,
+          "window_shape": [
+            59,
+            6000
+          ],
+          "stft_shape": [
+            59,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 148,
+          "spectrograms": 148,
+          "window_shape": [
+            148,
+            6000
+          ],
+          "stft_shape": [
+            148,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 2,
+          "spectrograms": 2,
+          "window_shape": [
+            2,
+            6000
+          ],
+          "stft_shape": [
+            2,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8594,
+      "total_spectrograms": 8594
+    },
+    {
+      "date": "2023-05-24",
+      "file": "KO.GAZ.2023-05-24.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 365,
+          "spectrograms": 365,
+          "window_shape": [
+            365,
+            6000
+          ],
+          "stft_shape": [
+            365,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 371,
+          "spectrograms": 371,
+          "window_shape": [
+            371,
+            6000
+          ],
+          "stft_shape": [
+            371,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 2136,
+          "spectrograms": 2136,
+          "window_shape": [
+            2136,
+            6000
+          ],
+          "stft_shape": [
+            2136,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8593,
+      "total_spectrograms": 8593
+    },
+    {
+      "date": "2023-05-25",
+      "file": "KO.GAZ.2023-05-25.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 913,
+          "spectrograms": 913,
+          "window_shape": [
+            913,
+            6000
+          ],
+          "stft_shape": [
+            913,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 359,
+          "spectrograms": 359,
+          "window_shape": [
+            359,
+            6000
+          ],
+          "stft_shape": [
+            359,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 724,
+          "spectrograms": 724,
+          "window_shape": [
+            724,
+            6000
+          ],
+          "stft_shape": [
+            724,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8574,
+      "total_spectrograms": 8574
+    },
+    {
+      "date": "2023-05-26",
+      "file": "KO.GAZ.2023-05-26.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 296,
+          "spectrograms": 296,
+          "window_shape": [
+            296,
+            6000
+          ],
+          "stft_shape": [
+            296,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 355,
+          "spectrograms": 355,
+          "window_shape": [
+            355,
+            6000
+          ],
+          "stft_shape": [
+            355,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1469,
+          "spectrograms": 1469,
+          "window_shape": [
+            1469,
+            6000
+          ],
+          "stft_shape": [
+            1469,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8534,
+      "total_spectrograms": 8534
+    },
+    {
+      "date": "2023-05-27",
+      "file": "KO.GAZ.2023-05-27.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 419,
+          "spectrograms": 419,
+          "window_shape": [
+            419,
+            6000
+          ],
+          "stft_shape": [
+            419,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 348,
+          "spectrograms": 348,
+          "window_shape": [
+            348,
+            6000
+          ],
+          "stft_shape": [
+            348,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 341,
+          "spectrograms": 341,
+          "window_shape": [
+            341,
+            6000
+          ],
+          "stft_shape": [
+            341,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8592,
+      "total_spectrograms": 8592
+    },
+    {
+      "date": "2023-05-28",
+      "file": "KO.GAZ.2023-05-28.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 508,
+          "spectrograms": 508,
+          "window_shape": [
+            508,
+            6000
+          ],
+          "stft_shape": [
+            508,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 147,
+          "spectrograms": 147,
+          "window_shape": [
+            147,
+            6000
+          ],
+          "stft_shape": [
+            147,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 267,
+          "spectrograms": 267,
+          "window_shape": [
+            267,
+            6000
+          ],
+          "stft_shape": [
+            267,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8599,
+      "total_spectrograms": 8599
+    },
+    {
+      "date": "2023-05-29",
+      "file": "KO.GAZ.2023-05-29.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 171,
+          "spectrograms": 171,
+          "window_shape": [
+            171,
+            6000
+          ],
+          "stft_shape": [
+            171,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 359,
+          "spectrograms": 359,
+          "window_shape": [
+            359,
+            6000
+          ],
+          "stft_shape": [
+            359,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 891,
+          "spectrograms": 891,
+          "window_shape": [
+            891,
+            6000
+          ],
+          "stft_shape": [
+            891,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8549,
+      "total_spectrograms": 8549
+    },
+    {
+      "date": "2023-05-30",
+      "file": "KO.GAZ.2023-05-30.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 191,
+          "spectrograms": 191,
+          "window_shape": [
+            191,
+            6000
+          ],
+          "stft_shape": [
+            191,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 109,
+          "spectrograms": 109,
+          "window_shape": [
+            109,
+            6000
+          ],
+          "stft_shape": [
+            109,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 830,
+          "spectrograms": 830,
+          "window_shape": [
+            830,
+            6000
+          ],
+          "stft_shape": [
+            830,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 7799,
+      "total_spectrograms": 7799
+    },
+    {
+      "date": "2023-05-31",
+      "file": "KO.GAZ.2023-05-31.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 209,
+          "spectrograms": 209,
+          "window_shape": [
+            209,
+            6000
+          ],
+          "stft_shape": [
+            209,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 105,
+          "spectrograms": 105,
+          "window_shape": [
+            105,
+            6000
+          ],
+          "stft_shape": [
+            105,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 311,
+          "spectrograms": 311,
+          "window_shape": [
+            311,
+            6000
+          ],
+          "stft_shape": [
+            311,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8582,
+      "total_spectrograms": 8582
+    },
+    {
+      "date": "2023-06-01",
+      "file": "KO.GAZ.2023-06-01.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 163,
+          "spectrograms": 163,
+          "window_shape": [
+            163,
+            6000
+          ],
+          "stft_shape": [
+            163,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 235,
+          "spectrograms": 235,
+          "window_shape": [
+            235,
+            6000
+          ],
+          "stft_shape": [
+            235,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 484,
+          "spectrograms": 484,
+          "window_shape": [
+            484,
+            6000
+          ],
+          "stft_shape": [
+            484,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8568,
+      "total_spectrograms": 8568
+    },
+    {
+      "date": "2023-06-02",
+      "file": "KO.GAZ.2023-06-02.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 422,
+          "spectrograms": 422,
+          "window_shape": [
+            422,
+            6000
+          ],
+          "stft_shape": [
+            422,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 176,
+          "spectrograms": 176,
+          "window_shape": [
+            176,
+            6000
+          ],
+          "stft_shape": [
+            176,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 85,
+          "spectrograms": 85,
+          "window_shape": [
+            85,
+            6000
+          ],
+          "stft_shape": [
+            85,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8555,
+      "total_spectrograms": 8555
+    },
+    {
+      "date": "2023-06-03",
+      "file": "KO.GAZ.2023-06-03.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 960,
+          "spectrograms": 960,
+          "window_shape": [
+            960,
+            6000
+          ],
+          "stft_shape": [
+            960,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 836,
+          "spectrograms": 836,
+          "window_shape": [
+            836,
+            6000
+          ],
+          "stft_shape": [
+            836,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1173,
+          "spectrograms": 1173,
+          "window_shape": [
+            1173,
+            6000
+          ],
+          "stft_shape": [
+            1173,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8605,
+      "total_spectrograms": 8605
+    },
+    {
+      "date": "2023-06-04",
+      "file": "KO.GAZ.2023-06-04.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 185,
+          "spectrograms": 185,
+          "window_shape": [
+            185,
+            6000
+          ],
+          "stft_shape": [
+            185,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 39,
+          "spectrograms": 39,
+          "window_shape": [
+            39,
+            6000
+          ],
+          "stft_shape": [
+            39,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 447,
+          "spectrograms": 447,
+          "window_shape": [
+            447,
+            6000
+          ],
+          "stft_shape": [
+            447,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8584,
+      "total_spectrograms": 8584
+    },
+    {
+      "date": "2023-06-05",
+      "file": "KO.GAZ.2023-06-05.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 797,
+          "spectrograms": 797,
+          "window_shape": [
+            797,
+            6000
+          ],
+          "stft_shape": [
+            797,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1993,
+          "spectrograms": 1993,
+          "window_shape": [
+            1993,
+            6000
+          ],
+          "stft_shape": [
+            1993,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 989,
+          "spectrograms": 989,
+          "window_shape": [
+            989,
+            6000
+          ],
+          "stft_shape": [
+            989,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8597,
+      "total_spectrograms": 8597
+    },
+    {
+      "date": "2023-06-06",
+      "file": "KO.GAZ.2023-06-06.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 686,
+          "spectrograms": 686,
+          "window_shape": [
+            686,
+            6000
+          ],
+          "stft_shape": [
+            686,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1020,
+          "spectrograms": 1020,
+          "window_shape": [
+            1020,
+            6000
+          ],
+          "stft_shape": [
+            1020,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 678,
+          "spectrograms": 678,
+          "window_shape": [
+            678,
+            6000
+          ],
+          "stft_shape": [
+            678,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8596,
+      "total_spectrograms": 8596
+    },
+    {
+      "date": "2023-06-07",
+      "file": "KO.GAZ.2023-06-07.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 797,
+          "spectrograms": 797,
+          "window_shape": [
+            797,
+            6000
+          ],
+          "stft_shape": [
+            797,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 633,
+          "spectrograms": 633,
+          "window_shape": [
+            633,
+            6000
+          ],
+          "stft_shape": [
+            633,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 305,
+          "spectrograms": 305,
+          "window_shape": [
+            305,
+            6000
+          ],
+          "stft_shape": [
+            305,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8581,
+      "total_spectrograms": 8581
+    },
+    {
+      "date": "2023-06-08",
+      "file": "KO.GAZ.2023-06-08.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 127,
+          "spectrograms": 127,
+          "window_shape": [
+            127,
+            6000
+          ],
+          "stft_shape": [
+            127,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 376,
+          "spectrograms": 376,
+          "window_shape": [
+            376,
+            6000
+          ],
+          "stft_shape": [
+            376,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 544,
+          "spectrograms": 544,
+          "window_shape": [
+            544,
+            6000
+          ],
+          "stft_shape": [
+            544,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8442,
+      "total_spectrograms": 8442
+    },
+    {
+      "date": "2023-06-09",
+      "file": "KO.GAZ.2023-06-09.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 481,
+          "spectrograms": 481,
+          "window_shape": [
+            481,
+            6000
+          ],
+          "stft_shape": [
+            481,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 38,
+          "spectrograms": 38,
+          "window_shape": [
+            38,
+            6000
+          ],
+          "stft_shape": [
+            38,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 392,
+          "spectrograms": 392,
+          "window_shape": [
+            392,
+            6000
+          ],
+          "stft_shape": [
+            392,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8574,
+      "total_spectrograms": 8574
+    },
+    {
+      "date": "2023-06-10",
+      "file": "KO.GAZ.2023-06-10.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 520,
+          "spectrograms": 520,
+          "window_shape": [
+            520,
+            6000
+          ],
+          "stft_shape": [
+            520,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1003,
+          "spectrograms": 1003,
+          "window_shape": [
+            1003,
+            6000
+          ],
+          "stft_shape": [
+            1003,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 452,
+          "spectrograms": 452,
+          "window_shape": [
+            452,
+            6000
+          ],
+          "stft_shape": [
+            452,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8611,
+      "total_spectrograms": 8611
+    },
+    {
+      "date": "2023-06-11",
+      "file": "KO.GAZ.2023-06-11.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 880,
+          "spectrograms": 880,
+          "window_shape": [
+            880,
+            6000
+          ],
+          "stft_shape": [
+            880,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 519,
+          "spectrograms": 519,
+          "window_shape": [
+            519,
+            6000
+          ],
+          "stft_shape": [
+            519,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 177,
+          "spectrograms": 177,
+          "window_shape": [
+            177,
+            6000
+          ],
+          "stft_shape": [
+            177,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8574,
+      "total_spectrograms": 8574
+    },
+    {
+      "date": "2023-06-12",
+      "file": "KO.GAZ.2023-06-12.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 31,
+          "spectrograms": 31,
+          "window_shape": [
+            31,
+            6000
+          ],
+          "stft_shape": [
+            31,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 64,
+          "spectrograms": 64,
+          "window_shape": [
+            64,
+            6000
+          ],
+          "stft_shape": [
+            64,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1921,
+          "spectrograms": 1921,
+          "window_shape": [
+            1921,
+            6000
+          ],
+          "stft_shape": [
+            1921,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8583,
+      "total_spectrograms": 8583
+    },
+    {
+      "date": "2023-06-13",
+      "file": "KO.GAZ.2023-06-13.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1036,
+          "spectrograms": 1036,
+          "window_shape": [
+            1036,
+            6000
+          ],
+          "stft_shape": [
+            1036,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 147,
+          "spectrograms": 147,
+          "window_shape": [
+            147,
+            6000
+          ],
+          "stft_shape": [
+            147,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 846,
+          "spectrograms": 846,
+          "window_shape": [
+            846,
+            6000
+          ],
+          "stft_shape": [
+            846,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8585,
+      "total_spectrograms": 8585
+    },
+    {
+      "date": "2023-06-14",
+      "file": "KO.GAZ.2023-06-14.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 130,
+          "spectrograms": 130,
+          "window_shape": [
+            130,
+            6000
+          ],
+          "stft_shape": [
+            130,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 530,
+          "spectrograms": 530,
+          "window_shape": [
+            530,
+            6000
+          ],
+          "stft_shape": [
+            530,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1192,
+          "spectrograms": 1192,
+          "window_shape": [
+            1192,
+            6000
+          ],
+          "stft_shape": [
+            1192,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8577,
+      "total_spectrograms": 8577
+    },
+    {
+      "date": "2023-06-15",
+      "file": "KO.GAZ.2023-06-15.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 423,
+          "spectrograms": 423,
+          "window_shape": [
+            423,
+            6000
+          ],
+          "stft_shape": [
+            423,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 19,
+          "spectrograms": 19,
+          "window_shape": [
+            19,
+            6000
+          ],
+          "stft_shape": [
+            19,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 293,
+          "spectrograms": 293,
+          "window_shape": [
+            293,
+            6000
+          ],
+          "stft_shape": [
+            293,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8590,
+      "total_spectrograms": 8590
+    },
+    {
+      "date": "2023-06-16",
+      "file": "KO.GAZ.2023-06-16.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1023,
+          "spectrograms": 1023,
+          "window_shape": [
+            1023,
+            6000
+          ],
+          "stft_shape": [
+            1023,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 361,
+          "spectrograms": 361,
+          "window_shape": [
+            361,
+            6000
+          ],
+          "stft_shape": [
+            361,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 143,
+          "spectrograms": 143,
+          "window_shape": [
+            143,
+            6000
+          ],
+          "stft_shape": [
+            143,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8565,
+      "total_spectrograms": 8565
+    },
+    {
+      "date": "2023-06-17",
+      "file": "KO.GAZ.2023-06-17.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 445,
+          "spectrograms": 445,
+          "window_shape": [
+            445,
+            6000
+          ],
+          "stft_shape": [
+            445,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 249,
+          "spectrograms": 249,
+          "window_shape": [
+            249,
+            6000
+          ],
+          "stft_shape": [
+            249,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 570,
+          "spectrograms": 570,
+          "window_shape": [
+            570,
+            6000
+          ],
+          "stft_shape": [
+            570,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8602,
+      "total_spectrograms": 8602
+    },
+    {
+      "date": "2023-06-18",
+      "file": "KO.GAZ.2023-06-18.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 540,
+          "spectrograms": 540,
+          "window_shape": [
+            540,
+            6000
+          ],
+          "stft_shape": [
+            540,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 575,
+          "spectrograms": 575,
+          "window_shape": [
+            575,
+            6000
+          ],
+          "stft_shape": [
+            575,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 299,
+          "spectrograms": 299,
+          "window_shape": [
+            299,
+            6000
+          ],
+          "stft_shape": [
+            299,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8601,
+      "total_spectrograms": 8601
+    },
+    {
+      "date": "2023-06-19",
+      "file": "KO.GAZ.2023-06-19.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 286,
+          "spectrograms": 286,
+          "window_shape": [
+            286,
+            6000
+          ],
+          "stft_shape": [
+            286,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 274,
+          "spectrograms": 274,
+          "window_shape": [
+            274,
+            6000
+          ],
+          "stft_shape": [
+            274,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 215,
+          "spectrograms": 215,
+          "window_shape": [
+            215,
+            6000
+          ],
+          "stft_shape": [
+            215,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8589,
+      "total_spectrograms": 8589
+    },
+    {
+      "date": "2023-06-20",
+      "file": "KO.GAZ.2023-06-20.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 877,
+          "spectrograms": 877,
+          "window_shape": [
+            877,
+            6000
+          ],
+          "stft_shape": [
+            877,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 463,
+          "spectrograms": 463,
+          "window_shape": [
+            463,
+            6000
+          ],
+          "stft_shape": [
+            463,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 64,
+          "spectrograms": 64,
+          "window_shape": [
+            64,
+            6000
+          ],
+          "stft_shape": [
+            64,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8537,
+      "total_spectrograms": 8537
+    },
+    {
+      "date": "2023-06-21",
+      "file": "KO.GAZ.2023-06-21.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 221,
+          "spectrograms": 221,
+          "window_shape": [
+            221,
+            6000
+          ],
+          "stft_shape": [
+            221,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 380,
+          "spectrograms": 380,
+          "window_shape": [
+            380,
+            6000
+          ],
+          "stft_shape": [
+            380,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 72,
+          "spectrograms": 72,
+          "window_shape": [
+            72,
+            6000
+          ],
+          "stft_shape": [
+            72,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8582,
+      "total_spectrograms": 8582
+    },
+    {
+      "date": "2023-06-22",
+      "file": "KO.GAZ.2023-06-22.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 85,
+          "spectrograms": 85,
+          "window_shape": [
+            85,
+            6000
+          ],
+          "stft_shape": [
+            85,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 490,
+          "spectrograms": 490,
+          "window_shape": [
+            490,
+            6000
+          ],
+          "stft_shape": [
+            490,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 108,
+          "spectrograms": 108,
+          "window_shape": [
+            108,
+            6000
+          ],
+          "stft_shape": [
+            108,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8562,
+      "total_spectrograms": 8562
+    },
+    {
+      "date": "2023-06-23",
+      "file": "KO.GAZ.2023-06-23.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 254,
+          "spectrograms": 254,
+          "window_shape": [
+            254,
+            6000
+          ],
+          "stft_shape": [
+            254,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 387,
+          "spectrograms": 387,
+          "window_shape": [
+            387,
+            6000
+          ],
+          "stft_shape": [
+            387,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 271,
+          "spectrograms": 271,
+          "window_shape": [
+            271,
+            6000
+          ],
+          "stft_shape": [
+            271,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8542,
+      "total_spectrograms": 8542
+    },
+    {
+      "date": "2023-06-24",
+      "file": "KO.GAZ.2023-06-24.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 548,
+          "spectrograms": 548,
+          "window_shape": [
+            548,
+            6000
+          ],
+          "stft_shape": [
+            548,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1874,
+          "spectrograms": 1874,
+          "window_shape": [
+            1874,
+            6000
+          ],
+          "stft_shape": [
+            1874,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 950,
+          "spectrograms": 950,
+          "window_shape": [
+            950,
+            6000
+          ],
+          "stft_shape": [
+            950,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8608,
+      "total_spectrograms": 8608
+    },
+    {
+      "date": "2023-06-25",
+      "file": "KO.GAZ.2023-06-25.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 41,
+          "spectrograms": 41,
+          "window_shape": [
+            41,
+            6000
+          ],
+          "stft_shape": [
+            41,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 21,
+          "spectrograms": 21,
+          "window_shape": [
+            21,
+            6000
+          ],
+          "stft_shape": [
+            21,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 469,
+          "spectrograms": 469,
+          "window_shape": [
+            469,
+            6000
+          ],
+          "stft_shape": [
+            469,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8594,
+      "total_spectrograms": 8594
+    },
+    {
+      "date": "2023-06-26",
+      "file": "KO.GAZ.2023-06-26.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 361,
+          "spectrograms": 361,
+          "window_shape": [
+            361,
+            6000
+          ],
+          "stft_shape": [
+            361,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 16,
+          "spectrograms": 16,
+          "window_shape": [
+            16,
+            6000
+          ],
+          "stft_shape": [
+            16,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1525,
+          "spectrograms": 1525,
+          "window_shape": [
+            1525,
+            6000
+          ],
+          "stft_shape": [
+            1525,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8604,
+      "total_spectrograms": 8604
+    },
+    {
+      "date": "2023-06-27",
+      "file": "KO.GAZ.2023-06-27.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 16,
+          "spectrograms": 16,
+          "window_shape": [
+            16,
+            6000
+          ],
+          "stft_shape": [
+            16,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 441,
+          "spectrograms": 441,
+          "window_shape": [
+            441,
+            6000
+          ],
+          "stft_shape": [
+            441,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 524,
+          "spectrograms": 524,
+          "window_shape": [
+            524,
+            6000
+          ],
+          "stft_shape": [
+            524,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8581,
+      "total_spectrograms": 8581
+    },
+    {
+      "date": "2023-06-28",
+      "file": "KO.GAZ.2023-06-28.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1026,
+          "spectrograms": 1026,
+          "window_shape": [
+            1026,
+            6000
+          ],
+          "stft_shape": [
+            1026,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 55,
+          "spectrograms": 55,
+          "window_shape": [
+            55,
+            6000
+          ],
+          "stft_shape": [
+            55,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 363,
+          "spectrograms": 363,
+          "window_shape": [
+            363,
+            6000
+          ],
+          "stft_shape": [
+            363,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8589,
+      "total_spectrograms": 8589
+    },
+    {
+      "date": "2023-06-29",
+      "file": "KO.GAZ.2023-06-29.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 157,
+          "spectrograms": 157,
+          "window_shape": [
+            157,
+            6000
+          ],
+          "stft_shape": [
+            157,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 36,
+          "spectrograms": 36,
+          "window_shape": [
+            36,
+            6000
+          ],
+          "stft_shape": [
+            36,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 836,
+          "spectrograms": 836,
+          "window_shape": [
+            836,
+            6000
+          ],
+          "stft_shape": [
+            836,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8597,
+      "total_spectrograms": 8597
+    },
+    {
+      "date": "2023-06-30",
+      "file": "KO.GAZ.2023-06-30.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1064,
+          "spectrograms": 1064,
+          "window_shape": [
+            1064,
+            6000
+          ],
+          "stft_shape": [
+            1064,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1428,
+          "spectrograms": 1428,
+          "window_shape": [
+            1428,
+            6000
+          ],
+          "stft_shape": [
+            1428,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 992,
+          "spectrograms": 992,
+          "window_shape": [
+            992,
+            6000
+          ],
+          "stft_shape": [
+            992,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8582,
+      "total_spectrograms": 8582
+    },
+    {
+      "date": "2023-07-01",
+      "file": "KO.GAZ.2023-07-01.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 76,
+          "spectrograms": 76,
+          "window_shape": [
+            76,
+            6000
+          ],
+          "stft_shape": [
+            76,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 182,
+          "spectrograms": 182,
+          "window_shape": [
+            182,
+            6000
+          ],
+          "stft_shape": [
+            182,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 318,
+          "spectrograms": 318,
+          "window_shape": [
+            318,
+            6000
+          ],
+          "stft_shape": [
+            318,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8585,
+      "total_spectrograms": 8585
+    },
+    {
+      "date": "2023-07-02",
+      "file": "KO.GAZ.2023-07-02.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 595,
+          "spectrograms": 595,
+          "window_shape": [
+            595,
+            6000
+          ],
+          "stft_shape": [
+            595,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 112,
+          "spectrograms": 112,
+          "window_shape": [
+            112,
+            6000
+          ],
+          "stft_shape": [
+            112,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 395,
+          "spectrograms": 395,
+          "window_shape": [
+            395,
+            6000
+          ],
+          "stft_shape": [
+            395,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8604,
+      "total_spectrograms": 8604
+    },
+    {
+      "date": "2023-07-03",
+      "file": "KO.GAZ.2023-07-03.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 180,
+          "spectrograms": 180,
+          "window_shape": [
+            180,
+            6000
+          ],
+          "stft_shape": [
+            180,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 57,
+          "spectrograms": 57,
+          "window_shape": [
+            57,
+            6000
+          ],
+          "stft_shape": [
+            57,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 43,
+          "spectrograms": 43,
+          "window_shape": [
+            43,
+            6000
+          ],
+          "stft_shape": [
+            43,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8598,
+      "total_spectrograms": 8598
+    },
+    {
+      "date": "2023-07-04",
+      "file": "KO.GAZ.2023-07-04.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 108,
+          "spectrograms": 108,
+          "window_shape": [
+            108,
+            6000
+          ],
+          "stft_shape": [
+            108,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1173,
+          "spectrograms": 1173,
+          "window_shape": [
+            1173,
+            6000
+          ],
+          "stft_shape": [
+            1173,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 610,
+          "spectrograms": 610,
+          "window_shape": [
+            610,
+            6000
+          ],
+          "stft_shape": [
+            610,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8597,
+      "total_spectrograms": 8597
+    },
+    {
+      "date": "2023-07-05",
+      "file": "KO.GAZ.2023-07-05.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 309,
+          "spectrograms": 309,
+          "window_shape": [
+            309,
+            6000
+          ],
+          "stft_shape": [
+            309,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 6,
+          "spectrograms": 6,
+          "window_shape": [
+            6,
+            6000
+          ],
+          "stft_shape": [
+            6,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1514,
+          "spectrograms": 1514,
+          "window_shape": [
+            1514,
+            6000
+          ],
+          "stft_shape": [
+            1514,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8596,
+      "total_spectrograms": 8596
+    },
+    {
+      "date": "2023-07-06",
+      "file": "KO.GAZ.2023-07-06.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 51,
+          "spectrograms": 51,
+          "window_shape": [
+            51,
+            6000
+          ],
+          "stft_shape": [
+            51,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 286,
+          "spectrograms": 286,
+          "window_shape": [
+            286,
+            6000
+          ],
+          "stft_shape": [
+            286,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1386,
+          "spectrograms": 1386,
+          "window_shape": [
+            1386,
+            6000
+          ],
+          "stft_shape": [
+            1386,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8588,
+      "total_spectrograms": 8588
+    },
+    {
+      "date": "2023-07-07",
+      "file": "KO.GAZ.2023-07-07.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 277,
+          "spectrograms": 277,
+          "window_shape": [
+            277,
+            6000
+          ],
+          "stft_shape": [
+            277,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 389,
+          "spectrograms": 389,
+          "window_shape": [
+            389,
+            6000
+          ],
+          "stft_shape": [
+            389,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 255,
+          "spectrograms": 255,
+          "window_shape": [
+            255,
+            6000
+          ],
+          "stft_shape": [
+            255,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8574,
+      "total_spectrograms": 8574
+    },
+    {
+      "date": "2023-07-08",
+      "file": "KO.GAZ.2023-07-08.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 243,
+          "spectrograms": 243,
+          "window_shape": [
+            243,
+            6000
+          ],
+          "stft_shape": [
+            243,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 192,
+          "spectrograms": 192,
+          "window_shape": [
+            192,
+            6000
+          ],
+          "stft_shape": [
+            192,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 903,
+          "spectrograms": 903,
+          "window_shape": [
+            903,
+            6000
+          ],
+          "stft_shape": [
+            903,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8585,
+      "total_spectrograms": 8585
+    },
+    {
+      "date": "2023-07-09",
+      "file": "KO.GAZ.2023-07-09.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 210,
+          "spectrograms": 210,
+          "window_shape": [
+            210,
+            6000
+          ],
+          "stft_shape": [
+            210,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 596,
+          "spectrograms": 596,
+          "window_shape": [
+            596,
+            6000
+          ],
+          "stft_shape": [
+            596,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 205,
+          "spectrograms": 205,
+          "window_shape": [
+            205,
+            6000
+          ],
+          "stft_shape": [
+            205,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8603,
+      "total_spectrograms": 8603
+    },
+    {
+      "date": "2023-07-10",
+      "file": "KO.GAZ.2023-07-10.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 659,
+          "spectrograms": 659,
+          "window_shape": [
+            659,
+            6000
+          ],
+          "stft_shape": [
+            659,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 387,
+          "spectrograms": 387,
+          "window_shape": [
+            387,
+            6000
+          ],
+          "stft_shape": [
+            387,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 288,
+          "spectrograms": 288,
+          "window_shape": [
+            288,
+            6000
+          ],
+          "stft_shape": [
+            288,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8598,
+      "total_spectrograms": 8598
+    },
+    {
+      "date": "2023-07-11",
+      "file": "KO.GAZ.2023-07-11.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 386,
+          "spectrograms": 386,
+          "window_shape": [
+            386,
+            6000
+          ],
+          "stft_shape": [
+            386,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 294,
+          "spectrograms": 294,
+          "window_shape": [
+            294,
+            6000
+          ],
+          "stft_shape": [
+            294,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 230,
+          "spectrograms": 230,
+          "window_shape": [
+            230,
+            6000
+          ],
+          "stft_shape": [
+            230,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8568,
+      "total_spectrograms": 8568
+    },
+    {
+      "date": "2023-07-12",
+      "file": "KO.GAZ.2023-07-12.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 164,
+          "spectrograms": 164,
+          "window_shape": [
+            164,
+            6000
+          ],
+          "stft_shape": [
+            164,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 400,
+          "spectrograms": 400,
+          "window_shape": [
+            400,
+            6000
+          ],
+          "stft_shape": [
+            400,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 534,
+          "spectrograms": 534,
+          "window_shape": [
+            534,
+            6000
+          ],
+          "stft_shape": [
+            534,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8599,
+      "total_spectrograms": 8599
+    },
+    {
+      "date": "2023-07-13",
+      "file": "KO.GAZ.2023-07-13.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 121,
+          "spectrograms": 121,
+          "window_shape": [
+            121,
+            6000
+          ],
+          "stft_shape": [
+            121,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 82,
+          "spectrograms": 82,
+          "window_shape": [
+            82,
+            6000
+          ],
+          "stft_shape": [
+            82,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1202,
+          "spectrograms": 1202,
+          "window_shape": [
+            1202,
+            6000
+          ],
+          "stft_shape": [
+            1202,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8599,
+      "total_spectrograms": 8599
+    },
+    {
+      "date": "2023-07-14",
+      "file": "KO.GAZ.2023-07-14.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 556,
+          "spectrograms": 556,
+          "window_shape": [
+            556,
+            6000
+          ],
+          "stft_shape": [
+            556,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 1070,
+          "spectrograms": 1070,
+          "window_shape": [
+            1070,
+            6000
+          ],
+          "stft_shape": [
+            1070,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 673,
+          "spectrograms": 673,
+          "window_shape": [
+            673,
+            6000
+          ],
+          "stft_shape": [
+            673,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8592,
+      "total_spectrograms": 8592
+    },
+    {
+      "date": "2023-07-15",
+      "file": "KO.GAZ.2023-07-15.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 438,
+          "spectrograms": 438,
+          "window_shape": [
+            438,
+            6000
+          ],
+          "stft_shape": [
+            438,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 500,
+          "spectrograms": 500,
+          "window_shape": [
+            500,
+            6000
+          ],
+          "stft_shape": [
+            500,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 214,
+          "spectrograms": 214,
+          "window_shape": [
+            214,
+            6000
+          ],
+          "stft_shape": [
+            214,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8607,
+      "total_spectrograms": 8607
+    },
+    {
+      "date": "2023-07-16",
+      "file": "KO.GAZ.2023-07-16.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 220,
+          "spectrograms": 220,
+          "window_shape": [
+            220,
+            6000
+          ],
+          "stft_shape": [
+            220,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 88,
+          "spectrograms": 88,
+          "window_shape": [
+            88,
+            6000
+          ],
+          "stft_shape": [
+            88,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 215,
+          "spectrograms": 215,
+          "window_shape": [
+            215,
+            6000
+          ],
+          "stft_shape": [
+            215,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8596,
+      "total_spectrograms": 8596
+    },
+    {
+      "date": "2023-07-17",
+      "file": "KO.GAZ.2023-07-17.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 412,
+          "spectrograms": 412,
+          "window_shape": [
+            412,
+            6000
+          ],
+          "stft_shape": [
+            412,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 383,
+          "spectrograms": 383,
+          "window_shape": [
+            383,
+            6000
+          ],
+          "stft_shape": [
+            383,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1912,
+          "spectrograms": 1912,
+          "window_shape": [
+            1912,
+            6000
+          ],
+          "stft_shape": [
+            1912,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8589,
+      "total_spectrograms": 8589
+    },
+    {
+      "date": "2023-07-18",
+      "file": "KO.GAZ.2023-07-18.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 190,
+          "spectrograms": 190,
+          "window_shape": [
+            190,
+            6000
+          ],
+          "stft_shape": [
+            190,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 577,
+          "spectrograms": 577,
+          "window_shape": [
+            577,
+            6000
+          ],
+          "stft_shape": [
+            577,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 646,
+          "spectrograms": 646,
+          "window_shape": [
+            646,
+            6000
+          ],
+          "stft_shape": [
+            646,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8254,
+      "total_spectrograms": 8254
+    },
+    {
+      "date": "2023-07-19",
+      "file": "KO.GAZ.2023-07-19.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 150,
+          "spectrograms": 150,
+          "window_shape": [
+            150,
+            6000
+          ],
+          "stft_shape": [
+            150,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 599,
+          "spectrograms": 599,
+          "window_shape": [
+            599,
+            6000
+          ],
+          "stft_shape": [
+            599,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1033,
+          "spectrograms": 1033,
+          "window_shape": [
+            1033,
+            6000
+          ],
+          "stft_shape": [
+            1033,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8609,
+      "total_spectrograms": 8609
+    },
+    {
+      "date": "2023-07-20",
+      "file": "KO.GAZ.2023-07-20.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 136,
+          "spectrograms": 136,
+          "window_shape": [
+            136,
+            6000
+          ],
+          "stft_shape": [
+            136,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 129,
+          "spectrograms": 129,
+          "window_shape": [
+            129,
+            6000
+          ],
+          "stft_shape": [
+            129,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 347,
+          "spectrograms": 347,
+          "window_shape": [
+            347,
+            6000
+          ],
+          "stft_shape": [
+            347,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8584,
+      "total_spectrograms": 8584
+    },
+    {
+      "date": "2023-07-21",
+      "file": "KO.GAZ.2023-07-21.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 138,
+          "spectrograms": 138,
+          "window_shape": [
+            138,
+            6000
+          ],
+          "stft_shape": [
+            138,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 98,
+          "spectrograms": 98,
+          "window_shape": [
+            98,
+            6000
+          ],
+          "stft_shape": [
+            98,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 499,
+          "spectrograms": 499,
+          "window_shape": [
+            499,
+            6000
+          ],
+          "stft_shape": [
+            499,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8582,
+      "total_spectrograms": 8582
+    },
+    {
+      "date": "2023-07-22",
+      "file": "KO.GAZ.2023-07-22.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 291,
+          "spectrograms": 291,
+          "window_shape": [
+            291,
+            6000
+          ],
+          "stft_shape": [
+            291,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 593,
+          "spectrograms": 593,
+          "window_shape": [
+            593,
+            6000
+          ],
+          "stft_shape": [
+            593,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 271,
+          "spectrograms": 271,
+          "window_shape": [
+            271,
+            6000
+          ],
+          "stft_shape": [
+            271,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8583,
+      "total_spectrograms": 8583
+    },
+    {
+      "date": "2023-07-23",
+      "file": "KO.GAZ.2023-07-23.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 260,
+          "spectrograms": 260,
+          "window_shape": [
+            260,
+            6000
+          ],
+          "stft_shape": [
+            260,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 741,
+          "spectrograms": 741,
+          "window_shape": [
+            741,
+            6000
+          ],
+          "stft_shape": [
+            741,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 408,
+          "spectrograms": 408,
+          "window_shape": [
+            408,
+            6000
+          ],
+          "stft_shape": [
+            408,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8593,
+      "total_spectrograms": 8593
+    },
+    {
+      "date": "2023-07-24",
+      "file": "KO.GAZ.2023-07-24.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 491,
+          "spectrograms": 491,
+          "window_shape": [
+            491,
+            6000
+          ],
+          "stft_shape": [
+            491,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 29,
+          "spectrograms": 29,
+          "window_shape": [
+            29,
+            6000
+          ],
+          "stft_shape": [
+            29,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 676,
+          "spectrograms": 676,
+          "window_shape": [
+            676,
+            6000
+          ],
+          "stft_shape": [
+            676,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8575,
+      "total_spectrograms": 8575
+    },
+    {
+      "date": "2023-07-25",
+      "file": "KO.GAZ.2023-07-25.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 363,
+          "spectrograms": 363,
+          "window_shape": [
+            363,
+            6000
+          ],
+          "stft_shape": [
+            363,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 855,
+          "spectrograms": 855,
+          "window_shape": [
+            855,
+            6000
+          ],
+          "stft_shape": [
+            855,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 2879,
+          "spectrograms": 2879,
+          "window_shape": [
+            2879,
+            6000
+          ],
+          "stft_shape": [
+            2879,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8594,
+      "total_spectrograms": 8594
+    },
+    {
+      "date": "2023-07-26",
+      "file": "KO.GAZ.2023-07-26.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 602,
+          "spectrograms": 602,
+          "window_shape": [
+            602,
+            6000
+          ],
+          "stft_shape": [
+            602,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 171,
+          "spectrograms": 171,
+          "window_shape": [
+            171,
+            6000
+          ],
+          "stft_shape": [
+            171,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1083,
+          "spectrograms": 1083,
+          "window_shape": [
+            1083,
+            6000
+          ],
+          "stft_shape": [
+            1083,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8604,
+      "total_spectrograms": 8604
+    },
+    {
+      "date": "2023-07-27",
+      "file": "KO.GAZ.2023-07-27.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 525,
+          "spectrograms": 525,
+          "window_shape": [
+            525,
+            6000
+          ],
+          "stft_shape": [
+            525,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 147,
+          "spectrograms": 147,
+          "window_shape": [
+            147,
+            6000
+          ],
+          "stft_shape": [
+            147,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 793,
+          "spectrograms": 793,
+          "window_shape": [
+            793,
+            6000
+          ],
+          "stft_shape": [
+            793,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8570,
+      "total_spectrograms": 8570
+    },
+    {
+      "date": "2023-07-28",
+      "file": "KO.GAZ.2023-07-28.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 119,
+          "spectrograms": 119,
+          "window_shape": [
+            119,
+            6000
+          ],
+          "stft_shape": [
+            119,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 220,
+          "spectrograms": 220,
+          "window_shape": [
+            220,
+            6000
+          ],
+          "stft_shape": [
+            220,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1089,
+          "spectrograms": 1089,
+          "window_shape": [
+            1089,
+            6000
+          ],
+          "stft_shape": [
+            1089,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8584,
+      "total_spectrograms": 8584
+    },
+    {
+      "date": "2023-07-29",
+      "file": "KO.GAZ.2023-07-29.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 1083,
+          "spectrograms": 1083,
+          "window_shape": [
+            1083,
+            6000
+          ],
+          "stft_shape": [
+            1083,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 246,
+          "spectrograms": 246,
+          "window_shape": [
+            246,
+            6000
+          ],
+          "stft_shape": [
+            246,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 680,
+          "spectrograms": 680,
+          "window_shape": [
+            680,
+            6000
+          ],
+          "stft_shape": [
+            680,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8591,
+      "total_spectrograms": 8591
+    },
+    {
+      "date": "2023-07-30",
+      "file": "KO.GAZ.2023-07-30.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 438,
+          "spectrograms": 438,
+          "window_shape": [
+            438,
+            6000
+          ],
+          "stft_shape": [
+            438,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 239,
+          "spectrograms": 239,
+          "window_shape": [
+            239,
+            6000
+          ],
+          "stft_shape": [
+            239,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 243,
+          "spectrograms": 243,
+          "window_shape": [
+            243,
+            6000
+          ],
+          "stft_shape": [
+            243,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8591,
+      "total_spectrograms": 8591
+    },
+    {
+      "date": "2023-07-31",
+      "file": "KO.GAZ.2023-07-31.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 582,
+          "spectrograms": 582,
+          "window_shape": [
+            582,
+            6000
+          ],
+          "stft_shape": [
+            582,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 173,
+          "spectrograms": 173,
+          "window_shape": [
+            173,
+            6000
+          ],
+          "stft_shape": [
+            173,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 633,
+          "spectrograms": 633,
+          "window_shape": [
+            633,
+            6000
+          ],
+          "stft_shape": [
+            633,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8594,
+      "total_spectrograms": 8594
+    },
+    {
+      "date": "2023-08-01",
+      "file": "KO.GAZ.2023-08-01.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 104,
+          "spectrograms": 104,
+          "window_shape": [
+            104,
+            6000
+          ],
+          "stft_shape": [
+            104,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 141,
+          "spectrograms": 141,
+          "window_shape": [
+            141,
+            6000
+          ],
+          "stft_shape": [
+            141,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1346,
+          "spectrograms": 1346,
+          "window_shape": [
+            1346,
+            6000
+          ],
+          "stft_shape": [
+            1346,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8595,
+      "total_spectrograms": 8595
+    },
+    {
+      "date": "2023-08-02",
+      "file": "KO.GAZ.2023-08-02.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 621,
+          "spectrograms": 621,
+          "window_shape": [
+            621,
+            6000
+          ],
+          "stft_shape": [
+            621,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 761,
+          "spectrograms": 761,
+          "window_shape": [
+            761,
+            6000
+          ],
+          "stft_shape": [
+            761,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1010,
+          "spectrograms": 1010,
+          "window_shape": [
+            1010,
+            6000
+          ],
+          "stft_shape": [
+            1010,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8600,
+      "total_spectrograms": 8600
+    },
+    {
+      "date": "2023-08-03",
+      "file": "KO.GAZ.2023-08-03.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 63,
+          "spectrograms": 63,
+          "window_shape": [
+            63,
+            6000
+          ],
+          "stft_shape": [
+            63,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 905,
+          "spectrograms": 905,
+          "window_shape": [
+            905,
+            6000
+          ],
+          "stft_shape": [
+            905,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 1608,
+          "spectrograms": 1608,
+          "window_shape": [
+            1608,
+            6000
+          ],
+          "stft_shape": [
+            1608,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8599,
+      "total_spectrograms": 8599
+    },
+    {
+      "date": "2023-08-04",
+      "file": "KO.GAZ.2023-08-04.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 93,
+          "spectrograms": 93,
+          "window_shape": [
+            93,
+            6000
+          ],
+          "stft_shape": [
+            93,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 54,
+          "spectrograms": 54,
+          "window_shape": [
+            54,
+            6000
+          ],
+          "stft_shape": [
+            54,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 743,
+          "spectrograms": 743,
+          "window_shape": [
+            743,
+            6000
+          ],
+          "stft_shape": [
+            743,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8570,
+      "total_spectrograms": 8570
+    },
+    {
+      "date": "2023-08-05",
+      "file": "KO.GAZ.2023-08-05.mseed",
+      "status": "success",
+      "channels": {
+        "HHE": {
+          "windows": 202,
+          "spectrograms": 202,
+          "window_shape": [
+            202,
+            6000
+          ],
+          "stft_shape": [
+            202,
+            129,
+            95
+          ]
+        },
+        "HHN": {
+          "windows": 819,
+          "spectrograms": 819,
+          "window_shape": [
+            819,
+            6000
+          ],
+          "stft_shape": [
+            819,
+            129,
+            95
+          ]
+        },
+        "HHZ": {
+          "windows": 378,
+          "spectrograms": 378,
+          "window_shape": [
+            378,
+            6000
+          ],
+          "stft_shape": [
+            378,
+            129,
+            95
+          ]
+        }
+      },
+      "total_windows": 8595,
+      "total_spectrograms": 8595
+    }
+  ]
+}

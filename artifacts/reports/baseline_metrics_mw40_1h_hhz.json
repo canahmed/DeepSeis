@@ -1,0 +1,107 @@
+{
+  "generated_at_utc": "2026-05-23T23:56:36+00:00",
+  "splits_dir": "data/processed/experiments/mw40_1h_hhz",
+  "experiment": "mw40_1h_hhz",
+  "baselines": {
+    "always_negative": {
+      "accuracy": 0.9890099825991391,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "roc_auc": 0.5,
+      "pr_auc": 0.011824873835894041,
+      "confusion_matrix": [
+        [
+          21598,
+          0
+        ],
+        [
+          240,
+          0
+        ]
+      ],
+      "support": {
+        "total": 21838,
+        "positive": 240,
+        "negative": 21598
+      },
+      "description": "All windows are predicted as normal."
+    },
+    "train_prior_constant": {
+      "accuracy": 0.9890099825991391,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "roc_auc": 0.5,
+      "pr_auc": 0.011824873835894041,
+      "confusion_matrix": [
+        [
+          21598,
+          0
+        ],
+        [
+          240,
+          0
+        ]
+      ],
+      "support": {
+        "total": 21838,
+        "positive": 240,
+        "negative": 21598
+      },
+      "description": "Every window receives the training-set positive prior as score.",
+      "positive_prior": 0.09051060588873945
+    },
+    "train_prior_random": {
+      "accuracy": 0.8996702994779742,
+      "precision": 0.01200600300150075,
+      "recall": 0.1,
+      "f1_score": 0.021438142027690937,
+      "roc_auc": 0.49936915455134734,
+      "pr_auc": 0.010868759765419808,
+      "confusion_matrix": [
+        [
+          19623,
+          1975
+        ],
+        [
+          216,
+          24
+        ]
+      ],
+      "support": {
+        "total": 21838,
+        "positive": 240,
+        "negative": 21598
+      },
+      "description": "Random scores and random labels sampled using the training positive prior.",
+      "seed": 42
+    },
+    "stft_mean_energy": {
+      "accuracy": 0.8709588790182251,
+      "precision": 0.005751533742331288,
+      "recall": 0.0625,
+      "f1_score": 0.010533707865168539,
+      "roc_auc": 0.5751089992900578,
+      "pr_auc": 0.012008530435113157,
+      "confusion_matrix": [
+        [
+          19005,
+          2593
+        ],
+        [
+          225,
+          15
+        ]
+      ],
+      "support": {
+        "total": 21838,
+        "positive": 240,
+        "negative": 21598
+      },
+      "description": "Mean log-STFT energy per window; threshold selected on validation F1.",
+      "threshold_from_val": 0.6123073778152466,
+      "val_f1_at_threshold": 0.028314028314028315
+    }
+  }
+}

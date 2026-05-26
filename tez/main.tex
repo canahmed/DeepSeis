@@ -1,0 +1,245 @@
+% ==========================================================
+% DeepSeis: Makine Öğrenmesi Tabanlı Sismik Anomali Tespiti
+% ve Olay Çevresi Davranış Analizi
+% BİTİRME TEZİ
+% ==========================================================
+\documentclass[12pt,a4paper,oneside]{book}
+
+% Türkçe dil desteği
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[turkish]{babel}
+
+% Sayfa düzeni
+\usepackage[margin=2.8cm]{geometry}
+
+% Matematik ve semboller
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% Görseller ve tablolar
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{caption}
+
+% Referanslar ve linkler
+\usepackage{hyperref}
+\usepackage[numbers,sort&compress]{natbib}
+
+% Başlık ve sayfa numaralandırma
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+% Satır aralığı
+\usepackage{setspace}
+\onehalfspacing
+\raggedbottom
+\emergencystretch=2em
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0.15em}
+
+% Şekil/tablo aralıkları
+\captionsetup{font=small,labelfont=bf,skip=6pt}
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+\setlength{\floatsep}{10pt plus 2pt minus 2pt}
+\setlength{\intextsep}{10pt plus 2pt minus 2pt}
+\renewcommand{\floatpagefraction}{0.75}
+\renewcommand{\textfraction}{0.12}
+\renewcommand{\topfraction}{0.88}
+\renewcommand{\bottomfraction}{0.80}
+
+% Gorsel ve tablo tasma kontrolu
+\newcommand{\fitfig}[2][]{%
+    \makebox[\textwidth][c]{%
+        \includegraphics[max width=\textwidth,max height=0.64\textheight,keepaspectratio,#1]{#2}%
+    }%
+}
+
+% Listeler
+\usepackage{enumitem}
+\setlist{itemsep=2pt, topsep=4pt, parsep=0pt, partopsep=0pt}
+
+% Kod blokları
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Algoritma
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+% PDF metadata
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=blue,
+    citecolor=black,
+    pdftitle={DeepSeis - Sismik Anomali Tespiti},
+    pdfauthor={Can Ahmedi Yaşar PARLAK}
+}
+
+% Sayfa başlığı ayarları - sayfa numarası alt ortada
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Bölüm başlangıç sayfaları için de aynı stil
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyfoot[C]{\thepage}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+}
+
+% Bölüm başlık formatı
+\titleformat{\chapter}[display]
+{\normalfont\Large\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\LARGE}
+\titlespacing*{\chapter}{0pt}{-20pt}{24pt}
+
+% ==========================================================
+\begin{document}
+
+% -------------------- KAPAK SAYFASI --------------------
+\begin{titlepage}
+    \centering
+    \vspace*{0.3cm}
+    
+    % Üniversite Logosu
+    \fitfig[max width=3.5cm,max height=4.8cm]{figures/RTEU-EN LOGO.png}
+    
+    \vspace{0.6cm}
+    
+    {\Large\bfseries RECEP TAYYİP ERDOĞAN ÜNİVERSİTESİ\par}
+    {\large MÜHENDİSLİK VE MİMARLIK FAKÜLTESİ\par}
+    {\large BİLGİSAYAR MÜHENDİSLİĞİ BÖLÜMÜ\par}
+    
+    \vspace{1.2cm}
+    
+    {\LARGE\bfseries Makine Öğrenmesi Tabanlı Sismik\\
+    Anomali Tespiti ve Olay Çevresi\\
+    Davranış Analizi\par}
+    
+    \vspace{0.4cm}
+    {\Large\bfseries ``DeepSeis''\par}
+    
+    \vspace{1.2cm}
+    {\Large\bfseries BİTİRME TEZİ\par}
+    
+    \vspace{1.2cm}
+    {\Large Can Ahmedi Yaşar PARLAK\par}
+    
+    \vfill
+    
+    {\large OCAK 2026\par}
+    {\large RİZE\par}
+\end{titlepage}
+
+% -------------------- İÇ KAPAK SAYFASI --------------------
+\newpage
+\thispagestyle{empty}
+\begin{center}
+    \vspace*{1cm}
+    
+    {\Large\bfseries Makine Öğrenmesi Tabanlı Sismik\\
+    Anomali Tespiti ve Olay Çevresi\\
+    Davranış Analizi\par}
+    
+    \vspace{0.5cm}
+    {\Large\bfseries ``DeepSeis''\par}
+    
+    \vspace{2cm}
+    {\Large Can Ahmedi Yaşar PARLAK\par}
+    
+    \vspace{3cm}
+    
+    \begin{adjustbox}{center,max width=\textwidth}
+    \begin{tabular}{ll}
+        \textbf{Jüri Üyeleri} & \\
+        Danışman: & Dr. Öğr. Üyesi Tuğçem PARTAL \\
+        Üye: & \\
+        Üye: & \\
+    \end{tabular}
+    \end{adjustbox}
+    
+    \vspace{2cm}
+    
+    \textbf{Bölüm Başkanı:} Dr. Öğr. Üyesi Yasin YALÇIN
+    
+    \vfill
+    
+    {\large OCAK 2026\par}
+    {\large RİZE\par}
+\end{center}
+
+% -------------------- ÖNSÖZ --------------------
+\newpage
+\pagenumbering{Roman}
+\setcounter{page}{3}
+\chapter*{ÖNSÖZ}
+\addcontentsline{toc}{chapter}{ÖNSÖZ}
+
+Depremler, yüksek yıkıcılık potansiyeli nedeniyle hem insan hayatı hem de ekonomik açıdan kritik öneme sahip doğal afetlerdir. Türkiye, Alp-Himalaya deprem kuşağı üzerinde yer alması nedeniyle tarih boyunca sayısız yıkıcı depreme maruz kalmıştır. Bu gerçeklik, deprem bilimi alanındaki araştırmaları ülkemiz için hayati bir öncelik haline getirmektedir.
+
+Bu tez çalışması, yapay zekâ ve makine öğrenmesi teknolojilerinin sismik veri analizine entegrasyonunu araştırmaktadır. Çalışmanın temel motivasyonu, STFT tabanlı zaman-frekans öznitelikleri ve sınıflandırma modelleri ile sismik sinyallerdeki normal/anomali ayrımını değerlendirmek ve bu ayrımın deprem olay çevresiyle ilişkisini nicel olarak analiz etmektir.
+
+Tezin hazırlanması sürecinde değerli bilgi birikimi, rehberliği ve yönlendirmeleri ile akademik gelişimime büyük katkı sağlayan danışman hocam Dr. Öğr. Üyesi Tuğçem Partal'a en içten teşekkürlerimi sunarım.
+
+Bu çalışma, deterministik bir deprem tahmini iddiası taşımamakta; bunun yerine sismik sinyallerdeki istatistiksel değişimlerin makine öğrenmesi yöntemleriyle ölçülebilir ve tekrarlanabilir biçimde analiz edilebileceğini ortaya koymayı hedeflemektedir.
+
+\vspace{2cm}
+\begin{flushright}
+    Can Ahmedi Yaşar PARLAK\\
+    Ocak 2026, Rize
+\end{flushright}
+
+% -------------------- ÖZET --------------------
+\chapter*{ÖZET}
+\addcontentsline{toc}{chapter}{ÖZET}
+
+Bu tez çalışması, sürekli sismik kayıtlar üzerinde makine öğrenmesi tabanlı anomali analizi gerçekleştirmeyi hedeflemektedir. Çalışmada MiniSEED formatındaki sismik kayıtlar kısa zaman pencerelerine ayrılmış, her pencere kısa süreli Fourier dönüşümü (STFT) ile zaman-frekans uzayında temsil edilmiş ve farklı etiketleme protokolleri altında değerlendirilmiştir.
+
+İlk deneylerde deprem öncesi kısa zaman pencerelerinin kronolojik testlerde ne ölçüde ayırt edilebildiği incelenmiştir. Bu protokolde pozitif sınıfın doğrulama ve test dönemlerinde oldukça seyrek kalması nedeniyle F1 ve precision metriklerinin sınırlı olduğu görülmüştür. Daha sonra temiz normal/anomali ayrımı protokolü kurulmuştur. Bu protokolde Mw $\geq$ 4,0 olaylarının $\pm$60 dakika çevresi anomali sınıfı, aynı büyüklükteki olaylardan en az 48 saat uzak pencereler ise temiz normal sınıf olarak tanımlanmıştır.
+
+STFT temsillerinden çıkarılan 51 boyutlu özet öznitelikler ile HistGradientBoosting, ExtraTrees ve RandomForest modelleri karşılaştırılmıştır. En başarılı model olan HistGradientBoosting, dengeli test kümesinde 0,8124 accuracy, 0,8066 precision, 0,8219 recall, 0,8142 F1, 0,8979 ROC-AUC ve 0,9090 PR-AUC değerlerine ulaşmıştır. Elde edilen sonuçlar, deprem olayına yakın sismik pencereler ile olaylardan uzak temiz normal pencereler arasında öğrenilebilir zaman-frekans farklılıkları bulunduğunu göstermektedir. Çalışma deterministik deprem tahmini iddiası taşımamakta; sismik sinyallerde normal/anomali ayrımı için araştırma amaçlı bir prototip sunmaktadır.
+
+\vspace{0.8cm}
+\textbf{Anahtar Kelimeler:}
+
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item \textbf{Sismik Anomali Tespiti:} Sürekli sismik sinyallerdeki olağandışı davranışların otomatik olarak belirlenmesi.
+    \item \textbf{STFT:} Sismik sinyallerin zaman-frekans içeriğini temsil etmek için kullanılan kısa süreli Fourier dönüşümü.
+    \item \textbf{Zaman Serisi Analizi:} Zamana bağlı verilerin istatistiksel ve algoritmik yöntemlerle incelenmesi.
+    \item \textbf{Makine Öğrenmesi:} Veriden çıkarılan özniteliklerle sınıflandırma ve skor üretme yöntemleri.
+    \item \textbf{HistGradientBoosting:} Ağaç tabanlı gradyan artırma yöntemiyle çalışan sınıflandırma modeli.
+    \item \textbf{Olay Çevresi Analizi:} Deprem olaylarının belirli zaman çevresindeki sismik pencerelerin incelenmesi.
+\end{itemize}
+
+% İçindekiler - Özet'ten hemen sonra
+\tableofcontents
+
+\input{chapters/sekiller_dizini}
+\input{chapters/tablolar_dizini}
+\input{chapters/kisaltmalar}
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{chapters/giris}
+\input{chapters/literatur}
+\input{chapters/yontem}
+\input{chapters/bulgular}
+\input{chapters/sonuc}
+\input{chapters/kaynaklar}
+\input{chapters/ozgecmis}
+
+\end{document}

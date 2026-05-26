@@ -1,0 +1,182 @@
+% -------------------- BULGULAR VE TARTIŞMA --------------------
+\chapter{BULGULAR VE TARTIŞMA}
+
+Bu bölümde DeepSeis projesi kapsamında yürütülen deneylerin sonuçları sunulmaktadır. Deneyler iki ayrı değerlendirme düzeyinde ele alınmıştır. İlk düzeyde, veri zaman sırası korunarak deprem öncesi veya olay çevresi pencerelerinin gelecekteki dönemlere genellenip genellenemediği incelenmiştir. İkinci düzeyde ise temiz normal ve olay çevresi anomali pencereleri dengeli biçimde ayrılarak modelin sismik sinyaldeki belirgin normal/anomali örüntülerini ayırt etme kapasitesi değerlendirilmiştir.
+
+\section{Deneysel Kurulum}
+
+\subsection{Veri Seti İstatistikleri}
+
+Çalışmada HHZ düşey bileşeninden elde edilen STFT pencereleri kullanılmıştır. İşlenmiş veri kümesi toplam 162.337 pencere içermektedir. Kronolojik bölümleme sonucunda eğitim, doğrulama ve test kümeleri sırasıyla 123.422, 17.077 ve 21.838 örnekten oluşmuştur.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Kronolojik Veri Bölümleme Özeti}
+\begin{adjustbox}{center,max width=\textwidth}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Bölüm} & \textbf{Pencere} & \textbf{Pozitif} & \textbf{Negatif} & \textbf{Pozitif Oranı} \\
+\midrule
+Eğitim & 123.422 & 11.171 & 112.251 & \%9,05 \\
+Doğrulama & 17.077 & 179 & 16.898 & \%1,05 \\
+Test & 21.838 & 240 & 21.598 & \%1,10 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\label{tab:kronolojik_bolumleme}
+\end{table}
+
+Tablo \ref{tab:kronolojik_bolumleme}, zaman sıralı bölümlemede pozitif sınıf oranının eğitim döneminden doğrulama ve test dönemlerine belirgin biçimde düştüğünü göstermektedir. Bu durum, deprem olaylarının veri zaman aralığı boyunca homojen dağılmadığını ve problemin yalnızca sınıf dengesizliği değil, aynı zamanda dağılım kayması içerdiğini göstermektedir.
+
+\subsection{Etiketleme Protokolleri}
+
+İlk deneylerde Mw $\geq$ 4,0 olaylarından önceki 1 saatlik pencereler pozitif sınıf olarak işaretlenmiştir. Bu kurulum, deprem öncesi kısa dönemli sinyal arama açısından daha iddialı ve zor bir problemdir. Daha sonra olay çevresi anomali tespiti için Mw $\geq$ 4,0 olaylarının $\pm$60 dakika çevresi pozitif sınıf olarak tanımlanmıştır. Son başarılı deneyde negatif sınıf, herhangi bir Mw $\geq$ 4,0 olayından en az 48 saat uzak pencerelerden seçilmiştir. Böylece modelin belirsiz geçiş bölgeleri yerine temiz normal ve temiz olay çevresi örüntülerini ayırt etmesi hedeflenmiştir.
+
+\section{Kronolojik Test Sonuçları}
+
+Kronolojik test protokolü, modelin geçmiş dönemlerde öğrenilen örüntüleri daha sonraki zaman aralıklarına aktarabilmesini ölçer. Bu protokol veri sızıntısını azaltması bakımından önemlidir; ancak olayların zamansal yoğunluğu değiştiğinde performans metrikleri sert biçimde düşebilmektedir.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Kronolojik Testlerde Elde Edilen Temel Sonuçlar}
+\begin{adjustbox}{center,max width=\textwidth}
+\begin{tabularx}{0.96\textwidth}{Xcccccc}
+\toprule
+\textbf{Model / Protokol} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{ROC-AUC} & \textbf{PR-AUC} \\
+\midrule
+CNN, Mw$\geq$4,0, 1 saat önce & 0,9015 & 0,0286 & 0,2417 & 0,0511 & 0,6324 & 0,0286 \\
+CNN Focal Loss, Mw$\geq$4,0, 1 saat önce & 0,9764 & 0,0521 & 0,0667 & 0,0585 & 0,5538 & 0,0294 \\
+Lojistik Regresyon, STFT öznitelikleri & 0,8177 & 0,0205 & 0,3333 & 0,0386 & 0,6484 & 0,0195 \\
+\bottomrule
+\end{tabularx}
+\end{adjustbox}
+\label{tab:kronolojik_sonuclar}
+\end{table}
+
+Tablo \ref{tab:kronolojik_sonuclar} sonuçları, kronolojik test senaryosunda accuracy değerinin tek başına yanıltıcı olabileceğini göstermektedir. Test kümesinde pozitif sınıf oranı yaklaşık \%1 olduğu için negatif sınıfı baskın tahmin eden modeller yüksek accuracy üretebilmekte, ancak precision ve F1 değerleri düşük kalmaktadır. Bu nedenle bu çalışmada ROC-AUC, PR-AUC, recall, precision ve karışıklık matrisi birlikte raporlanmıştır.
+
+\section{Temiz Normal / Anomali Ayrımı}
+
+\subsection{Dengeli Temiz Test Protokolü}
+
+Kronolojik protokolde gözlenen dağılım kaymasını ayrıca incelemek için ikinci bir deney protokolü kurulmuştur. Bu protokolde pozitif sınıf Mw $\geq$ 4,0 deprem olaylarının $\pm$60 dakika çevresindeki pencerelerden, negatif sınıf ise herhangi bir Mw $\geq$ 4,0 olayından en az 48 saat uzak pencerelerden oluşturulmuştur. Pozitif ve negatif örnekler dengeli seçilmiş; eğitim, doğrulama ve test ayrımı stratified random split ile yapılmıştır.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Temiz Dengeli Deney Veri Özeti}
+\begin{adjustbox}{center,max width=\textwidth}
+\begin{tabularx}{0.88\textwidth}{Xr}
+\toprule
+\textbf{Özellik} & \textbf{Değer} \\
+\midrule
+Pozitif tanımı & Mw $\geq$ 4,0 olayının $\pm$60 dakikası \\
+Negatif tanımı & Mw $\geq$ 4,0 olaylarından en az 48 saat uzak \\
+Toplam pozitif pencere & 19.564 \\
+Temiz negatif havuzu & 31.818 \\
+Eğitim örneği & 25.041 \\
+Doğrulama örneği & 6.261 \\
+Test örneği & 7.826 \\
+Test pozitif / negatif & 3.913 / 3.913 \\
+\bottomrule
+\end{tabularx}
+\end{adjustbox}
+\label{tab:temiz_deney_ozet}
+\end{table}
+
+Bu protokol doğrudan deprem tahmini iddiası taşımaz. Amaç, deprem olayına yakın sismik aktivite pencereleri ile olaylardan uzak normal referans pencereleri arasında ayırt edilebilir bir zaman-frekans örüntüsü bulunup bulunmadığını ölçmektir.
+
+\subsection{Model Performans Karşılaştırması}
+
+STFT spektrogramlarından 51 boyutlu özet öznitelik çıkarılmıştır. Bu öznitelikler küresel enerji istatistikleri, frekans bant ortalamaları, zaman bant ortalamaları, gradyan istatistikleri ve kaba zaman-frekans ızgara ortalamalarından oluşmaktadır. HistGradientBoosting, ExtraTrees ve RandomForest modelleri aynı protokolde karşılaştırılmıştır.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Temiz Normal/Anomali Ayrımı Model Performansı}
+\begin{adjustbox}{center,max width=\textwidth}
+\begin{tabularx}{0.96\textwidth}{Xcccccc}
+\toprule
+\textbf{Model} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{ROC-AUC} & \textbf{PR-AUC} \\
+\midrule
+HistGradientBoosting & \textbf{0,8124} & \textbf{0,8066} & 0,8219 & \textbf{0,8142} & \textbf{0,8979} & \textbf{0,9090} \\
+ExtraTrees & 0,8018 & 0,7799 & \textbf{0,8410} & 0,8093 & 0,8876 & 0,8965 \\
+RandomForest & 0,8117 & 0,8034 & 0,8252 & 0,8142 & 0,8935 & 0,9044 \\
+\bottomrule
+\end{tabularx}
+\end{adjustbox}
+\label{tab:temiz_model_performans}
+\end{table}
+
+Tablo \ref{tab:temiz_model_performans} incelendiğinde en dengeli sonucun HistGradientBoosting modeli tarafından üretildiği görülmektedir. Bu model test kümesinde 0,8124 accuracy, 0,8066 precision, 0,8219 recall ve 0,8142 F1 skoruna ulaşmıştır. ROC-AUC değerinin 0,8979 ve PR-AUC değerinin 0,9090 olması, modelin yalnızca tek bir eşikte değil, skor sıralaması bakımından da güçlü ayrım yaptığını göstermektedir.
+
+\begin{figure}[htbp]
+    \centering
+    \fitfig[max width=0.88\textwidth,max height=0.50\textheight]{figures/clean_model_comparison.png}
+    \caption{Temiz normal/anomali ayrımı için model karşılaştırması}
+    \label{fig:clean_model_comparison}
+\end{figure}
+
+\subsection{Karışıklık Matrisi}
+
+En iyi model olarak seçilen HistGradientBoosting sınıflandırıcısının test kümesi karışıklık matrisi Şekil \ref{fig:clean_confusion}'da verilmiştir.
+
+\begin{figure}[htbp]
+    \centering
+    \fitfig[max width=0.54\textwidth,max height=0.42\textheight]{figures/clean_hist_gradient_confusion_matrix.png}
+    \caption{HistGradientBoosting modeli karışıklık matrisi}
+    \label{fig:clean_confusion}
+\end{figure}
+
+Model, 3.913 pozitif test örneğinin 3.216'sını doğru biçimde anomali olarak sınıflandırmıştır. Normal sınıfta ise 3.913 örneğin 3.142'si doğru sınıflandırılmıştır. Yanlış negatif sayısı 697, yanlış pozitif sayısı 771 olarak ölçülmüştür. Bu sonuç, modelin recall tarafında güçlü olduğunu ve olay çevresi pencerelerinin büyük bölümünü yakaladığını göstermektedir.
+
+\subsection{ROC ve Precision-Recall Analizi}
+
+Şekil \ref{fig:clean_roc} ve Şekil \ref{fig:clean_pr}, HistGradientBoosting modelinin skor tabanlı ayrım gücünü göstermektedir.
+
+\begin{figure}[htbp]
+    \centering
+    \fitfig[max width=0.58\textwidth,max height=0.42\textheight]{figures/clean_hist_gradient_roc_curve.png}
+    \caption{HistGradientBoosting modeli ROC eğrisi}
+    \label{fig:clean_roc}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \fitfig[max width=0.58\textwidth,max height=0.42\textheight]{figures/clean_hist_gradient_pr_curve.png}
+    \caption{HistGradientBoosting modeli precision-recall eğrisi}
+    \label{fig:clean_pr}
+\end{figure}
+
+ROC-AUC değerinin 0,8979 olması, modelin normal ve olay çevresi anomali pencerelerini yüksek oranda ayırabildiğini göstermektedir. PR-AUC değerinin 0,9090 olması ise dengeli test kümesinde pozitif sınıfın sıralama kalitesinin yüksek olduğunu ortaya koymaktadır.
+
+\section{Tartışma}
+
+\subsection{Ana Bulgular}
+
+Deney sonuçları üç temel bulguya işaret etmektedir:
+
+\begin{enumerate}
+    \item \textbf{Kronolojik tahmin senaryosu zordur:} Veri zaman sırası korunduğunda pozitif sınıf oranı eğitim dönemine göre doğrulama ve test dönemlerinde ciddi biçimde düşmektedir. Bu dağılım kayması F1 ve precision değerlerini sınırlamaktadır.
+    
+    \item \textbf{STFT öznitelikleri ayırt edici bilgi taşımaktadır:} Temiz normal/anomali ayrımında 51 boyutlu STFT öznitelikleriyle \%80 üzeri accuracy, precision, recall ve F1 değerleri elde edilmiştir.
+    
+    \item \textbf{Problem tanımı sonuçları belirleyicidir:} Deprem öncesi tahmin, olay çevresi anomali tespiti ve temiz normal/anomali ayrımı birbirinden farklı görevlerdir. Bu çalışmada en güçlü ve savunulabilir sonuç, temiz normal ve olay çevresi anomali pencerelerinin ayrılması görevinde elde edilmiştir.
+\end{enumerate}
+
+\subsection{Sınırlamalar}
+
+Çalışmanın sınırlamaları aşağıda özetlenmiştir:
+
+\begin{itemize}
+    \item Sonuçlar ağırlıklı olarak tek istasyonun HHZ bileşeni üzerinden elde edilmiştir.
+    \item Kronolojik testlerde pozitif sınıf oldukça seyrektir; bu durum F1 ve precision metriklerini doğrudan etkilemektedir.
+    \item Temiz dengeli deney, olay çevresi ile olaylardan uzak normal dönemleri ayırır; bu nedenle deterministik deprem tahmini olarak yorumlanmamalıdır.
+    \item Üç bileşenli veri kullanımı için HHZ, HHN ve HHE kanallarının zaman damgası seviyesinde hizalanması gerekmektedir.
+\end{itemize}
+
+\subsection{Genel Değerlendirme}
+
+DeepSeis'in mevcut sürümü, sismik pencereleri STFT temsiline dönüştüren, farklı etiketleme protokollerini deneyen, kronolojik ve temiz dengeli değerlendirme sonuçlarını ayıran ve en başarılı modeli web arayüzünde çalıştırabilen uçtan uca bir prototip haline gelmiştir. En yüksek metrikler temiz normal/anomali ayrımı protokolünde elde edilmiştir. Bu nedenle tezde ana sonuç olarak bu protokol vurgulanmalı; kronolojik deprem öncesi tahmin sonuçları ise problemin zorluğunu ve gelecek çalışma ihtiyacını gösteren dürüst bir analiz olarak sunulmalıdır.

@@ -1,0 +1,17 @@
+{
+  "model": "cnn",
+  "experiment": "mw40_1h_hhz",
+  "splits_dir": "data\\processed\\experiments\\mw40_1h_hhz",
+  "run_name": "cnn_mw40_1h_hhz",
+  "epochs": 10,
+  "batch_size": 128,
+  "balanced_sampler": true,
+  "loss": "ce",
+  "lr": 0.0001,
+  "weight_decay": 0.0001,
+  "patience": 5,
+  "focal_alpha": null,
+  "focal_gamma": null,
+  "validation_f1_threshold": 5.616697649202251e-07,
+  "validation_f1_at_threshold": 0.020746407046824292
+}

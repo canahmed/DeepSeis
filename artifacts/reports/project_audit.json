@@ -1,0 +1,416 @@
+{
+  "generated_at_utc": "2026-05-23T23:57:18+00:00",
+  "paths": {
+    "root": "C:\\Users\\Can Ahmed\\Desktop\\DeepSeis",
+    "reports": "artifacts/reports"
+  },
+  "files": {
+    "raw_mseed_days": 181,
+    "processed_window_arrays": 543,
+    "processed_stft_arrays": 543,
+    "checkpoints": 3,
+    "figures": 10
+  },
+  "preprocessing": {
+    "file": "artifacts/reports/preprocessing_stats.json",
+    "reported_total_days": 178,
+    "reported_errors": 0,
+    "reported_total_windows": 1522897,
+    "reported_total_spectrograms": 1522897
+  },
+  "catalog": {
+    "file": "data/raw/catalog/earthquake_catalog.csv",
+    "events": 542,
+    "start_time": "2023-02-06 01:17:34.342000+00:00",
+    "end_time": "2023-08-03 04:56:18.057000+00:00",
+    "mw_ge_3_5": 542,
+    "mw_ge_4_0": 533,
+    "mw_ge_4_5": 179,
+    "max_magnitude": 7.8
+  },
+  "labels": {
+    "labels_12h": {
+      "file": "data/processed/windows/labels_12h.npy",
+      "total": 162337,
+      "positive": 63202,
+      "negative": 99135,
+      "positive_pct": 38.933
+    },
+    "labels_24h": {
+      "file": "data/processed/windows/labels_24h.npy",
+      "total": 162337,
+      "positive": 89385,
+      "negative": 72952,
+      "positive_pct": 55.061
+    },
+    "labels_3h": {
+      "file": "data/processed/windows/labels_3h.npy",
+      "total": 162337,
+      "positive": 26281,
+      "negative": 136056,
+      "positive_pct": 16.189
+    },
+    "labels_6h": {
+      "file": "data/processed/windows/labels_6h.npy",
+      "total": 162337,
+      "positive": 41591,
+      "negative": 120746,
+      "positive_pct": 25.62
+    }
+  },
+  "split_report": {
+    "train": {
+      "days": 126,
+      "samples": 123422,
+      "positive": 38294,
+      "negative": 85128,
+      "positive_pct": 31.03,
+      "shape": [
+        123422,
+        129,
+        95
+      ],
+      "date_range": "2023-02-06 → 2023-06-11"
+    },
+    "val": {
+      "days": 27,
+      "samples": 17077,
+      "positive": 1794,
+      "negative": 15283,
+      "positive_pct": 10.51,
+      "shape": [
+        17077,
+        129,
+        95
+      ],
+      "date_range": "2023-06-12 → 2023-07-08"
+    },
+    "test": {
+      "days": 28,
+      "samples": 21838,
+      "positive": 1503,
+      "negative": 20335,
+      "positive_pct": 6.88,
+      "shape": [
+        21838,
+        129,
+        95
+      ],
+      "date_range": "2023-07-09 → 2023-08-05"
+    }
+  },
+  "splits": {
+    "train": {
+      "x_file": "data/processed/windows/splits/X_train.npy",
+      "y_file": "data/processed/windows/splits/y_train.npy",
+      "x_shape": [
+        123422,
+        129,
+        95
+      ],
+      "samples": 123422,
+      "positive": 38294,
+      "negative": 85128,
+      "positive_pct": 31.027,
+      "x_size_mb": 5769.87
+    },
+    "val": {
+      "x_file": "data/processed/windows/splits/X_val.npy",
+      "y_file": "data/processed/windows/splits/y_val.npy",
+      "x_shape": [
+        17077,
+        129,
+        95
+      ],
+      "samples": 17077,
+      "positive": 1794,
+      "negative": 15283,
+      "positive_pct": 10.505,
+      "x_size_mb": 798.33
+    },
+    "test": {
+      "x_file": "data/processed/windows/splits/X_test.npy",
+      "y_file": "data/processed/windows/splits/y_test.npy",
+      "x_shape": [
+        21838,
+        129,
+        95
+      ],
+      "samples": 21838,
+      "positive": 1503,
+      "negative": 20335,
+      "positive_pct": 6.882,
+      "x_size_mb": 1020.91
+    }
+  },
+  "model_metrics": {
+    "LSTM": {
+      "file": "artifacts/reports/LSTM_metrics.json",
+      "accuracy": 0.8895961168605183,
+      "precision": 0.07007575757575757,
+      "recall": 0.049234863606121095,
+      "f1_score": 0.05783509183274717,
+      "roc_auc": 0.4230602641941754,
+      "pr_auc": 0.05974073661043133,
+      "support": {
+        "total": 21838,
+        "positive": 1503,
+        "negative": 20335
+      },
+      "confusion_matrix": [
+        [
+          19353,
+          982
+        ],
+        [
+          1429,
+          74
+        ]
+      ]
+    },
+    "TRANSFORMER": {
+      "file": "artifacts/reports/TRANSFORMER_metrics.json",
+      "accuracy": 0.8652807033611136,
+      "precision": 0.080466472303207,
+      "recall": 0.09181636726546906,
+      "f1_score": 0.08576755748912368,
+      "roc_auc": 0.49234446441924773,
+      "pr_auc": 0.07810005204133125,
+      "support": {
+        "total": 21838,
+        "positive": 1503,
+        "negative": 20335
+      },
+      "confusion_matrix": [
+        [
+          18758,
+          1577
+        ],
+        [
+          1365,
+          138
+        ]
+      ]
+    }
+  },
+  "baseline_metrics": {
+    "always_negative": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "roc_auc": 0.5,
+      "pr_auc": 0.07143995267773548
+    },
+    "train_prior_constant": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "roc_auc": 0.5,
+      "pr_auc": 0.07143995267773548
+    },
+    "train_prior_random": {
+      "precision": 0.06865322816243062,
+      "recall": 0.31270791749833665,
+      "f1_score": 0.11258833393220746,
+      "roc_auc": 0.4940434678548812,
+      "pr_auc": 0.06774314407048311
+    },
+    "stft_mean_energy": {
+      "precision": 0.05844454670961804,
+      "recall": 0.25349301397205587,
+      "f1_score": 0.09498878085265519,
+      "roc_auc": 0.48689595646834355,
+      "pr_auc": 0.06223546430180778
+    }
+  },
+  "labeling_matrix": {
+    "channel": "HHZ",
+    "window_count": 162337,
+    "recommended_candidates": [
+      {
+        "min_magnitude": 3.5,
+        "hours": 1,
+        "events": 542,
+        "matched_events": 200,
+        "positive": 11830,
+        "negative": 150507,
+        "positive_pct": 7.287,
+        "imbalance_negative_per_positive": 12.722,
+        "splits": {
+          "train": {
+            "total": 123422,
+            "positive": 11411,
+            "positive_pct": 9.246
+          },
+          "val": {
+            "total": 17077,
+            "positive": 179,
+            "positive_pct": 1.048
+          },
+          "test": {
+            "total": 21838,
+            "positive": 240,
+            "positive_pct": 1.099
+          }
+        }
+      },
+      {
+        "min_magnitude": 4.0,
+        "hours": 1,
+        "events": 533,
+        "matched_events": 197,
+        "positive": 11590,
+        "negative": 150747,
+        "positive_pct": 7.139,
+        "imbalance_negative_per_positive": 13.007,
+        "splits": {
+          "train": {
+            "total": 123422,
+            "positive": 11171,
+            "positive_pct": 9.051
+          },
+          "val": {
+            "total": 17077,
+            "positive": 179,
+            "positive_pct": 1.048
+          },
+          "test": {
+            "total": 21838,
+            "positive": 240,
+            "positive_pct": 1.099
+          }
+        }
+      },
+      {
+        "min_magnitude": 4.0,
+        "hours": 3,
+        "events": 533,
+        "matched_events": 227,
+        "positive": 25673,
+        "negative": 136664,
+        "positive_pct": 15.815,
+        "imbalance_negative_per_positive": 5.323,
+        "splits": {
+          "train": {
+            "total": 123422,
+            "positive": 24172,
+            "positive_pct": 19.585
+          },
+          "val": {
+            "total": 17077,
+            "positive": 875,
+            "positive_pct": 5.124
+          },
+          "test": {
+            "total": 21838,
+            "positive": 626,
+            "positive_pct": 2.867
+          }
+        }
+      },
+      {
+        "min_magnitude": 3.5,
+        "hours": 3,
+        "events": 542,
+        "matched_events": 233,
+        "positive": 26281,
+        "negative": 136056,
+        "positive_pct": 16.189,
+        "imbalance_negative_per_positive": 5.177,
+        "splits": {
+          "train": {
+            "total": 123422,
+            "positive": 24684,
+            "positive_pct": 20.0
+          },
+          "val": {
+            "total": 17077,
+            "positive": 939,
+            "positive_pct": 5.499
+          },
+          "test": {
+            "total": 21838,
+            "positive": 658,
+            "positive_pct": 3.013
+          }
+        }
+      }
+    ]
+  },
+  "experiments": {
+    "mw40_1h_hhz": {
+      "path": "data/processed/experiments/mw40_1h_hhz",
+      "channel": "HHZ",
+      "min_magnitude": 4.0,
+      "pre_event_hours": 1,
+      "total_windows": 162337,
+      "positive": 11590,
+      "positive_pct": 7.139,
+      "splits": {
+        "train": {
+          "samples": 123422,
+          "positive": 11171,
+          "positive_pct": 9.051
+        },
+        "val": {
+          "samples": 17077,
+          "positive": 179,
+          "positive_pct": 1.048
+        },
+        "test": {
+          "samples": 21838,
+          "positive": 240,
+          "positive_pct": 1.099
+        }
+      }
+    },
+    "mw45_6h_hhz": {
+      "path": "data/processed/experiments/mw45_6h_hhz",
+      "channel": "HHZ",
+      "min_magnitude": 4.5,
+      "pre_event_hours": 6,
+      "total_windows": 162337,
+      "positive": 15922,
+      "positive_pct": 9.808,
+      "splits": {
+        "train": {
+          "samples": 123422,
+          "positive": 15203,
+          "positive_pct": 12.318
+        },
+        "val": {
+          "samples": 17077,
+          "positive": 0,
+          "positive_pct": 0.0
+        },
+        "test": {
+          "samples": 21838,
+          "positive": 719,
+          "positive_pct": 3.292
+        }
+      }
+    }
+  },
+  "thesis": {
+    "placeholder_count": 11,
+    "files": {
+      "tez/chapters/bulgular.tex": 4,
+      "tez/chapters/giris.tex": 1,
+      "tez/chapters/literatur.tex": 2,
+      "tez/chapters/yontem.tex": 4
+    }
+  },
+  "warnings": [
+    "Train/test positive-label distribution drift is high (31.03% vs 6.88%).",
+    "LSTM ROC-AUC is at or below random baseline (0.423).",
+    "LSTM F1 score is very low (0.058).",
+    "TRANSFORMER ROC-AUC is at or below random baseline (0.492).",
+    "TRANSFORMER F1 score is very low (0.086).",
+    "LSTM F1 (0.058) is below best simple baseline F1 (0.113).",
+    "TRANSFORMER F1 (0.086) is below best simple baseline F1 (0.113).",
+    "24h labeling marks more than half of windows as positive; it is weak for anomaly discrimination.",
+    "Preprocessing reports many more windows than labels; current labeling/splits appear to use a subset (likely HHZ only).",
+    "Three-component processed arrays exist, but current split/label workflow should be checked for channel usage.",
+    "Thesis still has 11 figure/table placeholders."
+  ]
+}

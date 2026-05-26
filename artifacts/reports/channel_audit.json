@@ -1,0 +1,128 @@
+{
+  "generated_at_utc": "2026-05-23T23:36:51+00:00",
+  "dates_total": 181,
+  "complete_three_component_dates": 181,
+  "aligned_three_component_dates": 13,
+  "mismatched_three_component_dates": 168,
+  "dates_with_missing_components": 0,
+  "channel_totals": {
+    "HHZ": 162337,
+    "HHN": 123653,
+    "HHE": 113475
+  },
+  "label_totals": {
+    "labels_12h": 162337,
+    "labels_24h": 162337,
+    "labels_3h": 162337,
+    "labels_6h": 162337
+  },
+  "sample_mismatched_dates": {
+    "2023-02-06": {
+      "HHZ": 1321,
+      "HHN": 575,
+      "HHE": 23
+    },
+    "2023-02-08": {
+      "HHZ": 1917,
+      "HHN": 96,
+      "HHE": 705
+    },
+    "2023-02-09": {
+      "HHZ": 1871,
+      "HHN": 1042,
+      "HHE": 416
+    },
+    "2023-02-10": {
+      "HHZ": 554,
+      "HHN": 54,
+      "HHE": 15
+    },
+    "2023-02-11": {
+      "HHZ": 183,
+      "HHN": 94,
+      "HHE": 684
+    },
+    "2023-02-12": {
+      "HHZ": 506,
+      "HHN": 1520,
+      "HHE": 506
+    },
+    "2023-02-13": {
+      "HHZ": 1584,
+      "HHN": 2879,
+      "HHE": 2879
+    },
+    "2023-02-15": {
+      "HHZ": 377,
+      "HHN": 377,
+      "HHE": 376
+    },
+    "2023-02-16": {
+      "HHZ": 522,
+      "HHN": 522,
+      "HHE": 469
+    },
+    "2023-02-17": {
+      "HHZ": 361,
+      "HHN": 156,
+      "HHE": 497
+    },
+    "2023-02-18": {
+      "HHZ": 1395,
+      "HHN": 1255,
+      "HHE": 511
+    },
+    "2023-02-19": {
+      "HHZ": 907,
+      "HHN": 1433,
+      "HHE": 347
+    },
+    "2023-02-20": {
+      "HHZ": 1244,
+      "HHN": 1227,
+      "HHE": 650
+    },
+    "2023-02-21": {
+      "HHZ": 1475,
+      "HHN": 357,
+      "HHE": 1465
+    },
+    "2023-02-22": {
+      "HHZ": 372,
+      "HHN": 1615,
+      "HHE": 373
+    },
+    "2023-02-23": {
+      "HHZ": 825,
+      "HHN": 471,
+      "HHE": 471
+    },
+    "2023-02-24": {
+      "HHZ": 1468,
+      "HHN": 1688,
+      "HHE": 1688
+    },
+    "2023-02-25": {
+      "HHZ": 247,
+      "HHN": 235,
+      "HHE": 247
+    },
+    "2023-02-27": {
+      "HHZ": 2879,
+      "HHN": 1376,
+      "HHE": 692
+    },
+    "2023-03-01": {
+      "HHZ": 404,
+      "HHN": 404,
+      "HHE": 413
+    }
+  },
+  "sample_missing_dates": {},
+  "recommendation": [
+    "Current labels align exactly with HHZ metadata counts.",
+    "Naively stacking HHZ/HHN/HHE by array index is unsafe because many dates have different valid-window counts.",
+    "For a three-component model, rebuild preprocessing around common time windows or align by metadata timestamps.",
+    "Near-term model improvements should either document HHZ-only training or create a new timestamp-aligned 3C dataset."
+  ]
+}

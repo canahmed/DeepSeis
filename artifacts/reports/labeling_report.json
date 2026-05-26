@@ -1,0 +1,30 @@
+[
+  {
+    "hours": 3,
+    "positive": 26281,
+    "negative": 136056,
+    "positive_pct": 16.19,
+    "imbalance": "1:5"
+  },
+  {
+    "hours": 6,
+    "positive": 41591,
+    "negative": 120746,
+    "positive_pct": 25.62,
+    "imbalance": "1:2"
+  },
+  {
+    "hours": 12,
+    "positive": 63202,
+    "negative": 99135,
+    "positive_pct": 38.93,
+    "imbalance": "1:1"
+  },
+  {
+    "hours": 24,
+    "positive": 89385,
+    "negative": 72952,
+    "positive_pct": 55.06,
+    "imbalance": "1:0"
+  }
+]

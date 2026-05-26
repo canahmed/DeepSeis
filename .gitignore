@@ -1,0 +1,47 @@
+# Python/runtime
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venv/
+.venv/
+
+# IDE/editor state
+.vs/
+.vscode/
+.idea/
+
+# Large/generated seismic data
+data/raw/mseed/
+data/processed/
+data/interim/
+
+# Generated model artifacts
+artifacts/checkpoints/
+artifacts/logs/
+artifacts/features/*
+artifacts/models/*
+!artifacts/models/
+!artifacts/models/mw40_pm60m_hhz_clean_gap48h_hist_gradient.joblib
+
+# Keep reports/figures reviewable, but ignore common transient files
+artifacts/**/*.tmp
+artifacts/**/*.log
+
+# LaTeX build outputs
+tez/**/*.aux
+tez/**/*.bbl
+tez/**/*.bcf
+tez/**/*.blg
+tez/**/*.fdb_latexmk
+tez/**/*.fls
+tez/**/*.lof
+tez/**/*.log
+tez/**/*.lot
+tez/**/*.out
+tez/**/*.run.xml
+tez/**/*.synctex.gz
+tez/**/*.toc
+tez/**/*.xdv
+tez/**/*.pdf

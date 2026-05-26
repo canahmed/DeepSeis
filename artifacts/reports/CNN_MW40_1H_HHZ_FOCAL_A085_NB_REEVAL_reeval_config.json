@@ -1,0 +1,9 @@
+{
+  "model": "cnn",
+  "checkpoint": "artifacts\\checkpoints\\cnn_mw40_1h_hhz_focal_a085_nb_best.pt",
+  "splits_dir": "data\\processed\\experiments\\mw40_1h_hhz",
+  "experiment": "mw40_1h_hhz",
+  "threshold": 0.46940778946876527,
+  "validation_f1_at_threshold": 0.0024271844660194173,
+  "max_alert_rate": 0.1
+}

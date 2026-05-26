@@ -1,0 +1,93 @@
+{
+  "protocol": "clean_balanced_event_vs_far_normal",
+  "experiment": "mw40_pm60m_hhz",
+  "channel": "HHZ",
+  "min_magnitude": 4.0,
+  "event_window_minutes": 60,
+  "negative_gap_hours": 48,
+  "positive_count": 19564,
+  "negative_pool": 31818,
+  "sizes": {
+    "train": 25041,
+    "val": 6261,
+    "test": 7826
+  },
+  "models": {
+    "hist_gradient": {
+      "threshold": 0.44334378852440964,
+      "accuracy": 0.8124201380015333,
+      "precision": 0.8066215199398044,
+      "recall": 0.8218757986199847,
+      "f1_score": 0.8141772151898734,
+      "roc_auc": 0.8979057600171478,
+      "pr_auc": 0.9089753018035946,
+      "confusion_matrix": [
+        [
+          3142,
+          771
+        ],
+        [
+          697,
+          3216
+        ]
+      ],
+      "support": {
+        "total": 7826,
+        "positive": 3913,
+        "negative": 3913
+      },
+      "validation_f1_at_threshold": 0.8247944339025933
+    },
+    "extra_trees": {
+      "threshold": 0.43375,
+      "accuracy": 0.8018144646051623,
+      "precision": 0.7798578199052133,
+      "recall": 0.8410426782519805,
+      "f1_score": 0.8092954629288086,
+      "roc_auc": 0.8876424094748225,
+      "pr_auc": 0.8964544557471955,
+      "confusion_matrix": [
+        [
+          2984,
+          929
+        ],
+        [
+          622,
+          3291
+        ]
+      ],
+      "support": {
+        "total": 7826,
+        "positive": 3913,
+        "negative": 3913
+      },
+      "validation_f1_at_threshold": 0.8137825421133231
+    },
+    "random_forest": {
+      "threshold": 0.45,
+      "accuracy": 0.8116534628162535,
+      "precision": 0.80343368997263,
+      "recall": 0.8251980577561973,
+      "f1_score": 0.8141704488149268,
+      "roc_auc": 0.8935221465546739,
+      "pr_auc": 0.9043577176487967,
+      "confusion_matrix": [
+        [
+          3123,
+          790
+        ],
+        [
+          684,
+          3229
+        ]
+      ],
+      "support": {
+        "total": 7826,
+        "positive": 3913,
+        "negative": 3913
+      },
+      "validation_f1_at_threshold": 0.8210196078431372
+    }
+  },
+  "best_by_test_f1": "hist_gradient"
+}

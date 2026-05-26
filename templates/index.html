@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSeis - Sismik Yapay Zeka İstasyonu</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --glass-bg: rgba(30, 41, 59, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --accent-glow: #38bdf8;
+            --danger-glow: #ef4444;
+            --text-main: #f8fafc;
+            --text-mute: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.05), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(239, 68, 68, 0.05), transparent 25%);
+            background-attachment: fixed;
+        }
+
+        header {
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-box h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+        }
+
+        .logo-box p {
+            color: var(--text-mute);
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        .container {
+            flex: 1;
+            padding: 0 5%;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .glass-panel {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 2rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-panel::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        }
+
+        .chart-container {
+            height: 400px;
+            width: 100%;
+        }
+
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .stat-box {
+            background: rgba(0,0,0,0.2);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .stat-box h3 {
+            color: var(--text-mute);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .stat-value {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .value-normal { color: #10b981; }
+        .value-warning { color: #f59e0b; }
+        .value-danger { color: #ef4444; }
+
+        .btn {
+            background: linear-gradient(135deg, #3b82f6, #6366f1);
+            color: white;
+            border: none;
+            padding: 1rem;
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
+        }
+
+        .btn-stop {
+            background: linear-gradient(135deg, #ef4444, #b91c1c);
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+        }
+
+        /* Alarm Pulse Animation for Glass Panel */
+        @keyframes emergencyPulse {
+            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); border-color: rgba(239, 68, 68, 0.5); }
+            70% { box-shadow: 0 0 40px 20px rgba(239, 68, 68, 0); border-color: rgba(255, 255, 255, 0.1); }
+            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); border-color: rgba(255, 255, 255, 0.1); }
+        }
+
+        .alarm-state {
+            animation: emergencyPulse 1.5s infinite;
+        }
+
+        /* Alarm Siren Dot */
+        .siren {
+            width: 15px; 
+            height: 15px;
+            background-color: #ef4444;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            opacity: 0.2;
+            transition: opacity 0.3s ease;
+        }
+
+        .siren.active {
+            opacity: 1;
+            box-shadow: 0 0 15px 5px rgba(239, 68, 68, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-box">
+            <h1>DeepSeis</h1>
+            <p>Makine Öğrenmesi Tabanlı Sismik Anomali Analizi (Prototip)</p>
+        </div>
+        <div class="status" style="display:flex; align-items:center;">
+            <div class="siren" id="sirenIndicator"></div>
+            <span id="systemStatus" style="color:var(--text-mute); font-weight:600;">SİSTEM BEKLEMEDE</span>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- Graph Area -->
+        <div class="glass-panel" id="mainPanel">
+            <h2 style="margin-bottom: 20px; font-weight: 500;">Gerçek Zamanlı Sismik Anomali Analizi</h2>
+            <div class="chart-container">
+                <canvas id="seismicChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Controls Area -->
+        <div class="controls">
+            <div class="glass-panel" style="padding: 1.5rem;">
+                <button class="btn" id="streamBtn" style="width: 100%;">Gelen Veriyi Analiz Et</button>
+            </div>
+
+            <div class="glass-panel text-center">
+                <div class="stat-box">
+                    <h3>Anlık Anomali İhtimali</h3>
+                    <div class="stat-value value-normal" id="anomalyScoreVal">%0.0</div>
+                </div>
+            </div>
+
+            <div class="glass-panel text-center">
+                <div class="stat-box">
+                    <h3>İncelenen Pencere</h3>
+                    <div class="stat-value" id="windowCountVal" style="font-size: 2rem;">0</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Application Logic -->
+    <script>
+        // Chart.js Configuration
+        const ctx = document.getElementById('seismicChart').getContext('2d');
+        
+        // Gradient for chart line
+        let gradient = ctx.createLinearGradient(0, 0, 0, 400);
+        gradient.addColorStop(0, 'rgba(239, 68, 68, 1)'); // Red top
+        gradient.addColorStop(0.5, 'rgba(245, 158, 11, 1)'); // Yellow mid
+        gradient.addColorStop(1, 'rgba(56, 189, 248, 1)'); // Blue bottom
+
+        const seismicChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [], // Timeline indexes
+                datasets: [
+                    {
+                        label: 'Model Olasılık Skoru',
+                        data: [],
+                        borderColor: gradient,
+                        borderWidth: 3,
+                        tension: 0.4, // Smooth curves
+                        pointRadius: 0,
+                        fill: true,
+                        backgroundColor: 'rgba(56, 189, 248, 0.05)'
+                    },
+                    {
+                        label: 'Tehlike Eşiği',
+                        data: [],
+                        borderColor: 'rgba(255, 255, 255, 0.2)',
+                        borderWidth: 2,
+                        borderDash: [5, 5],
+                        pointRadius: 0,
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: { duration: 0 }, // Turn off default animation for smooth streaming
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 1.0,
+                        grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                        ticks: { color: '#94a3b8' }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: { display: false }
+                    }
+                },
+                plugins: {
+                    legend: { labels: { color: '#94a3b8' } }
+                }
+            }
+        });
+
+        // App State
+        let isStreaming = false;
+        let streamInterval = null;
+        let dataPoints = 0;
+        let decisionThreshold = 0.5;
+        const MAX_DATAPOINTS_ON_SCREEN = 150; // Kayma efekti için
+
+        // Elements
+        const streamBtn = document.getElementById('streamBtn');
+        const anomalyScoreVal = document.getElementById('anomalyScoreVal');
+        const windowCountVal = document.getElementById('windowCountVal');
+        const mainPanel = document.getElementById('mainPanel');
+        const sirenIndicator = document.getElementById('sirenIndicator');
+        const systemStatus = document.getElementById('systemStatus');
+
+        async function loadSystemStatus() {
+            try {
+                const response = await fetch('/status');
+                const status = await response.json();
+                if (!status.ready) {
+                    systemStatus.textContent = 'MODEL HAZIR DEĞİL';
+                    systemStatus.style.color = '#ef4444';
+                    streamBtn.disabled = true;
+                    streamBtn.textContent = 'Model Yüklenemedi';
+                    return;
+                }
+                decisionThreshold = status.threshold || 0.5;
+                const backend = status.backend ? status.backend.toUpperCase() : 'MODEL';
+                systemStatus.textContent = `${backend} | ${status.model_arch.toUpperCase()} | ${status.experiment}`;
+                systemStatus.style.color = '#94a3b8';
+            } catch (error) {
+                console.error('Status Error:', error);
+            }
+        }
+
+        loadSystemStatus();
+
+        streamBtn.addEventListener('click', () => {
+            if (isStreaming) {
+                stopStream();
+            } else {
+                startStream();
+            }
+        });
+
+        async function startStream() {
+            // Reset backend if starting fresh
+            if (dataPoints === 0) {
+                await fetch('/reset_simulation', { method: 'POST' });
+            }
+            
+            isStreaming = true;
+            streamBtn.textContent = 'Analizi Durdur';
+            streamBtn.classList.add('btn-stop');
+            systemStatus.textContent = 'CANLI İZLEME AKTİF';
+            systemStatus.style.color = '#10b981';
+
+            // Poll the backend every 250ms
+            streamInterval = setInterval(fetchNextBatch, 300);
+        }
+
+        function stopStream() {
+            isStreaming = false;
+            clearInterval(streamInterval);
+            streamBtn.textContent = 'Devam Et';
+            streamBtn.classList.remove('btn-stop');
+            systemStatus.textContent = 'SİSTEM BEKLEMEDE';
+            systemStatus.style.color = '#94a3b8';
+            mainPanel.classList.remove('alarm-state');
+            sirenIndicator.classList.remove('active');
+        }
+
+        async function fetchNextBatch() {
+            try {
+                const response = await fetch('/get_next_batch');
+                const result = await response.json();
+
+                if (result.status === 'error') {
+                    stopStream();
+                    alert(result.message);
+                    return;
+                }
+
+                // Append new data
+                result.data.forEach(item => {
+                    const score = item.anomaly_score;
+                    dataPoints++;
+                    
+                    seismicChart.data.labels.push(item.index);
+                    seismicChart.data.datasets[0].data.push(score);
+                    seismicChart.data.datasets[1].data.push(item.threshold || decisionThreshold); // Eşik çizgisi
+
+                    // Sliding window effect
+                    if (seismicChart.data.labels.length > MAX_DATAPOINTS_ON_SCREEN) {
+                        seismicChart.data.labels.shift();
+                        seismicChart.data.datasets[0].data.shift();
+                        seismicChart.data.datasets[1].data.shift();
+                    }
+
+                    // Update UI Stats
+                    windowCountVal.textContent = item.index;
+                    const percentScore = (score * 100).toFixed(1);
+                    anomalyScoreVal.textContent = `%${percentScore}`;
+
+                    // Handle Anomaly Colors and Effects
+                    if (score >= (item.threshold || decisionThreshold)) {
+                        anomalyScoreVal.className = 'stat-value value-danger';
+                        mainPanel.classList.add('alarm-state');
+                        sirenIndicator.classList.add('active');
+                        systemStatus.textContent = 'ANOMALİ TESPİT EDİLDİ!';
+                        systemStatus.style.color = '#ef4444';
+                    } else if (score > 0.4) {
+                        anomalyScoreVal.className = 'stat-value value-warning';
+                        mainPanel.classList.remove('alarm-state');
+                        sirenIndicator.classList.remove('active');
+                        systemStatus.textContent = 'SİSMİK HAREKETLİLİK: İZLENİYOR';
+                        systemStatus.style.color = '#f59e0b';
+                    } else {
+                        anomalyScoreVal.className = 'stat-value value-normal';
+                        mainPanel.classList.remove('alarm-state');
+                        sirenIndicator.classList.remove('active');
+                        systemStatus.textContent = 'SİSMİK AKTİVİTE: NORMAL';
+                        systemStatus.style.color = '#10b981';
+                    }
+                });
+
+                seismicChart.update();
+
+            } catch (error) {
+                console.error("API Error:", error);
+                stopStream();
+            }
+        }
+    </script>
+</body>
+</html>

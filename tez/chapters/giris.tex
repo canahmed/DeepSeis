@@ -1,0 +1,133 @@
+% -------------------- GİRİŞ --------------------
+\chapter{GİRİŞ}
+
+\section{Problem Tanımı}
+
+Deprem, yüksek yıkıcılık potansiyeli nedeniyle hem insan hayatı hem de ekonomik açıdan kritik bir doğal afettir \cite{allen2009real}. Dünya genelinde her yıl ortalama 20.000'den fazla can kaybına neden olan depremler, aynı zamanda milyarlarca dolarlık ekonomik zarara yol açmaktadır. Türkiye, Kuzey Anadolu Fay Hattı ve Doğu Anadolu Fay Hattı gibi aktif tektonik yapılar üzerinde konumlanması nedeniyle tarih boyunca sayısız yıkıcı depreme maruz kalmıştır \cite{ambraseys2002seismicity}. 1999 Marmara Depremi (Mw 7.4) ve 2023 Kahramanmaraş Depremleri (Mw 7.7 ve Mw 7.6) bu yıkıcılığın en acı örnekleridir. Bu gerçeklik, deprem bilimi alanındaki araştırmaları ülkemiz için stratejik bir öncelik haline getirmektedir.
+
+\subsection{Mevcut Erken Uyarı Sistemlerinin Sınırlamaları}
+
+Günümüzde kullanılan erken uyarı sistemleri genellikle depremin ilk saniyelerinde P-dalgasını (birincil dalga) algılayarak, daha yıkıcı olan S-dalgasından (ikincil dalga) önce uyarı vermeye odaklanmaktadır \cite{kanamori2005real}. Bu sistemlerin çalışma prensibi şöyle özetlenebilir:
+
+\begin{enumerate}
+    \item \textbf{P-Dalgası Algılama:} Deprem kaynağından yayılan ilk sismik dalga olan P-dalgası, hızı nedeniyle istasyonlara ilk ulaşan dalgadır (yaklaşık 6-8 km/s).
+    \item \textbf{Hızlı Analiz:} Sistem, P-dalgasının özelliklerinden (genlik, frekans içeriği) depremin büyüklüğünü ve konumunu tahmin eder.
+    \item \textbf{Uyarı Yayını:} S-dalgası (yaklaşık 3-5 km/s) ve yüzey dalgaları varmadan önce saniyeler içinde uyarı verilir.
+\end{enumerate}
+
+Bu yaklaşım deprem başladıktan sonra birkaç saniyelik (genellikle 10-60 saniye) kazanım sağlamaktadır. Ancak bazı kritik sınırlamaları bulunmaktadır:
+
+\begin{itemize}
+    \item \textbf{Reaktif Yapı:} Sistem ancak deprem başladıktan sonra devreye girmektedir.
+    \item \textbf{Kör Bölge:} Episantra yakın bölgelerde uyarı süresi çok kısa veya sıfır olabilir.
+    \item \textbf{Tahmin Değil, Algılama:} Deprem öncesi herhangi bir öngörü sağlamamaktadır.
+\end{itemize}
+
+\subsection{Deprem Öncesi Anomali Tespitinin Önemi}
+
+Deprem olmadan önceki saatler veya günler içinde yer kabuğundaki mikrosismik davranıştaki değişimleri modelleyerek ``olasılık artışı'' hakkında bir ön sinyal üretmek hâlâ bilimsel olarak zorlu ve tartışmalı bir konudur \cite{geller1997earthquakes}. Ancak son yıllarda yapılan araştırmalar, bazı depremlerin öncesinde şu tür anomalilerin gözlemlenebileceğini ortaya koymuştur:
+
+\begin{itemize}
+    \item \textbf{Mikrosismik Aktivite Değişimi:} Fay hattı çevresinde küçük depremlerin sıklığında artış veya azalma.
+    \item \textbf{Sismik Hız Değişimi:} Yeraltı kayaç özelliklerinin stres altında değişmesi.
+    \item \textbf{b-Değeri Anomalileri:} Gutenberg-Richter yasasındaki b parametresinin değişimi.
+    \item \textbf{Frekans İçeriği Değişimi:} Sismik gürültünün spektral özelliklerinde kayma.
+\end{itemize}
+
+Bu tez çalışması, tamamen deterministik bir ``yarın deprem olacak'' iddiasında bulunmak yerine, sismik sinyallerdeki normal ve anomali örüntülerini otomatik olarak ayırt eden bir araştırma prototipi geliştirmeyi hedeflemektedir. Çalışmada özellikle deprem olayına yakın sismik pencereler ile olaylardan uzak temiz normal pencereler arasındaki zaman-frekans farkları incelenmektedir.
+
+\begin{figure}[htbp]
+    \centering
+    \fitfig[max width=0.82\textwidth,max height=0.52\textheight]{figures/deepseis_system_architecture.png}
+    \caption{DeepSeis Sistem Mimarisi Genel Görünümü}
+    \label{fig:sistem_mimarisi}
+\end{figure}
+
+\section{Araştırma Soruları}
+
+Bu çalışma aşağıdaki temel araştırma sorularını cevaplamayı amaçlamaktadır:
+
+\begin{enumerate}
+    \item \textbf{Anomali Varlığı:} Deprem öncesi belirli frekans bantlarında veya genlik değişimlerinde olağan dışı davranışlar (anomali) oluşmakta mıdır?
+    
+    \item \textbf{Model Etkinliği:} STFT tabanlı öznitelikler ve makine öğrenmesi modelleri, temiz normal ve olay çevresi anomali pencerelerini güvenilir şekilde ayırt edebilir mi?
+    
+    \item \textbf{İstatistiksel Anlamlılık:} Tespit edilen anomaliler ile gerçekleşen depremler arasında istatistiksel olarak anlamlı bir korelasyon var mıdır?
+    
+    \item \textbf{Öncü Süre:} Anomaliler tespit edilebiliyorsa, depremden ne kadar süre önce oluşmaktadır?
+    
+    \item \textbf{Genelleştirilebilirlik:} Geliştirilen model farklı bölgelere ve farklı büyüklükteki depremlere uygulanabilir mi?
+\end{enumerate}
+
+\section{Amaç ve Bilimsel Katkı}
+
+Bu tezin temel amacı, sismik titreşim verilerini STFT tabanlı zaman-frekans temsillerine dönüştürerek:
+
+\begin{itemize}
+    \item Sürekli kaydedilen ivme/titreşim sinyallerinden anlamlı zaman-frekans öznitelikleri çıkarmak,
+    \item Olay çevresi anomali pencereleri ile temiz normal pencereleri karşılaştırmak,
+    \item Makine öğrenmesi ve derin öğrenme modellerinin bu görevdeki performansını ölçmek,
+    \item En başarılı modeli çalışan bir web arayüzü içinde anomali skoru üretecek şekilde kullanmaktır.
+\end{itemize}
+
+\subsection{Neden STFT ve Makine Öğrenmesi Yaklaşımı?}
+
+Bu çalışmada farklı derin öğrenme modelleri denenmiş, ancak nihai başarılı prototip STFT tabanlı öznitelikler ve ağaç tabanlı makine öğrenmesi modelleri üzerine kurulmuştur. Bu tercihin temel nedenleri şunlardır:
+
+\begin{enumerate}
+    \item \textbf{Zaman-frekans açıklığı:} STFT, sismik sinyalin hem zamansal hem de frekans içeriğini birlikte temsil eder.
+    
+    \item \textbf{Hızlı deney döngüsü:} Özet öznitelikler, farklı etiketleme protokollerinin hızlı biçimde karşılaştırılmasını sağlar.
+    
+    \item \textbf{Sınıf dengesizliğine dayanıklılık:} HistGradientBoosting, RandomForest ve ExtraTrees gibi modeller sınırlı ve dengesiz veri koşullarında güçlü referans sonuçlar üretebilir.
+    
+    \item \textbf{Uygulama kolaylığı:} Eğitilen model küçük boyutlu \texttt{joblib} çıktısı olarak saklanabilir ve web arayüzünde hızlı çalıştırılabilir.
+\end{enumerate}
+
+\subsection{Bilimsel Katkılar}
+
+Bu çalışmanın literatüre sağlayacağı başlıca bilimsel katkılar şunlardır:
+
+\begin{enumerate}
+    \item \textbf{Model Karşılaştırması:} Derin öğrenme modelleri ile STFT özniteliklerine dayalı makine öğrenmesi modellerinin sismik anomali tespitindeki performanslarının karşılaştırılması.
+    
+    \item \textbf{Çoklu Girdi Temsilleri:} Sismik verinin ham dalga formundan (raw waveform) spektral temsillere (spektrogram, STFT, Mel benzeri bant güçleri) dönüştürülüp farklı girdi biçimlerinin denenmesi ve karşılaştırılması.
+    
+    \item \textbf{Nicel Değerlendirme:} Normal/anomali ayrımının accuracy, precision, recall, F1, ROC-AUC ve PR-AUC metrikleriyle ölçülmesi.
+    
+    \item \textbf{Yerel Uygulama:} Türkiye odaklı gerçek istasyon verileri kullanılarak yerel bir erken uyarı / risk artışı analiz prototipinin hazırlanması.
+    
+    \item \textbf{Çalışan Prototip:} Geliştirilen modelin Flask tabanlı arayüzde anomali skoru üretecek biçimde çalıştırılması.
+\end{enumerate}
+
+\section{Çalışmanın Kapsamı ve Sınırları}
+
+Bu çalışma aşağıdaki kapsam dahilinde yürütülmektedir:
+
+\begin{itemize}
+    \item \textbf{Coğrafi Kapsam:} Türkiye'deki seçili sismik istasyonlar (Doğu Anadolu Fay Hattı çevresi)
+    \item \textbf{Zaman Kapsamı:} 6-12 aylık sürekli sismik kayıtlar
+    \item \textbf{Büyüklük Kapsamı:} Ana deneylerde Mw $\geq$ 4.0 büyüklüğündeki depremler
+\end{itemize}
+
+Çalışmanın bilinen sınırlamaları:
+
+\begin{itemize}
+    \item Bu çalışma, deterministik deprem tahmini iddiasında bulunmamaktadır.
+    \item Sonuçlar belirli bir bölge ve zaman dilimi için geçerlidir; genelleştirme ayrı çalışma gerektirir.
+    \item Tespit edilen anomalilerin tamamı tektonik kökenli olmayabilir.
+\end{itemize}
+
+\section{Tezin Organizasyonu}
+
+Bu tez altı bölümden oluşmaktadır:
+
+\textbf{Bölüm 1 (Giriş):} Problem tanımı, mevcut sistemlerin sınırlamaları, araştırma soruları ve çalışmanın amaçları sunulmaktadır.
+
+\textbf{Bölüm 2 (Literatür Taraması):} Sismik veri analizi, anomali tespiti yöntemleri, makine öğrenmesi ve derin öğrenme yaklaşımları hakkındaki mevcut çalışmalar kapsamlı şekilde incelenmektedir.
+
+\textbf{Bölüm 3 (Yöntem):} Veri kaynakları, veri ön işleme teknikleri, model mimarisi, eğitim stratejisi ve değerlendirme metrikleri detaylı olarak açıklanmaktadır.
+
+\textbf{Bölüm 4 (Bulgular ve Tartışma):} Deneysel sonuçlar sunulmakta, model performansları karşılaştırılmakta ve bulgular literatür ışığında değerlendirilmektedir.
+
+\textbf{Bölüm 5 (Sonuç ve Öneriler):} Çalışmanın sonuçları özetlenmekte, sınırlılıklar tartışılmakta ve gelecek çalışmalar için öneriler sunulmaktadır.

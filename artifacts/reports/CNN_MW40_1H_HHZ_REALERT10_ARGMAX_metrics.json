@@ -1,0 +1,27 @@
+{
+  "accuracy": 0.9014561773056141,
+  "precision": 0.028599605522682446,
+  "recall": 0.24166666666666667,
+  "f1_score": 0.05114638447971781,
+  "roc_auc": 0.6324225622742847,
+  "pr_auc": 0.028571611808510197,
+  "confusion_matrix": [
+    [
+      19628,
+      1970
+    ],
+    [
+      182,
+      58
+    ]
+  ],
+  "support": {
+    "total": 21838,
+    "positive": 240,
+    "negative": 21598
+  },
+  "threshold": 0.5,
+  "threshold_source": "argmax_binary_softmax",
+  "validation_f1_at_threshold": null,
+  "experiment": "mw40_1h_hhz"
+}

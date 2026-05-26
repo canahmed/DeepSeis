@@ -1,0 +1,133 @@
+% -------------------- LİTERATÜR TARAMASI --------------------
+\chapter{LİTERATÜR TARAMASI}
+
+\section{Sismik Veri Analizi ve Deprem Erken Uyarı Sistemleri}
+
+Sismik veri analizi, yer kabuğundaki titreşimlerin kaydedilmesi, işlenmesi ve yorumlanmasını kapsayan multidisipliner bir alandır. Deprem dalgaları, P-dalgaları (birincil, boyuna dalgalar) ve S-dalgaları (ikincil, enine dalgalar) olmak üzere iki ana kategoriye ayrılmaktadır \cite{stein2009introduction}. P-dalgaları daha hızlı yayılırken, S-dalgaları daha fazla enerji taşımakta ve yapısal hasara neden olmaktadır.
+
+\begin{figure}[htbp]
+    \centering
+    \fitfig[max width=0.82\textwidth,max height=0.48\textheight]{figures/seismic_wave_types.png}
+    \caption{Sismik Dalga Tipleri ve Yayılım Karakteristikleri}
+    \label{fig:sismik_dalgalar}
+\end{figure}
+
+Geleneksel erken uyarı sistemleri, P-dalgasının algılanmasından S-dalgasının varışına kadar geçen süreyi kullanarak uyarı vermektedir \cite{allen2009real}. Japonya'daki JMA (Japan Meteorological Agency) sistemi ve ABD'deki ShakeAlert bu yaklaşımın önde gelen örnekleridir \cite{given2014technical}. Türkiye'de ise İstanbul için geliştirilen erken uyarı sistemi benzer prensiplerle çalışmaktadır \cite{erdik2003earthquake}.
+
+\subsection{Klasik Sinyal İşleme Yöntemleri}
+
+Sismik sinyallerde olay tespiti için yaygın olarak kullanılan klasik yöntemler şunlardır:
+
+\begin{itemize}
+    \item \textbf{STA/LTA (Short-Term Average / Long-Term Average):} Kısa vadeli ve uzun vadeli sinyal ortalamalarının oranını hesaplayarak ani değişimleri tespit eder \cite{allen1978automatic}. Bu yöntem basit ve hesaplama açısından verimli olmasına rağmen, gürültülü ortamlarda yüksek yanlış alarm oranına sahiptir.
+    
+    \item \textbf{Eşik Tabanlı Tetikleyiciler:} Sinyal genliği belirli bir eşik değerini aştığında olay kaydı başlatılır. Bu yöntem, eşik değerinin seçimine oldukça duyarlıdır.
+    
+    \item \textbf{Spektral Analiz:} Fourier dönüşümü kullanılarak sinyalin frekans bileşenleri analiz edilir \cite{oppenheim1999discrete}. Deprem sinyalleri karakteristik frekans örüntüleri sergilemektedir.
+\end{itemize}
+
+\section{Makine Öğrenmesi ve Derin Öğrenme Yaklaşımları}
+
+Son yıllarda makine öğrenmesi ve derin öğrenme yöntemleri, sismik veri analizinde önemli başarılar elde etmiştir \cite{kong2019machine}. Bu yaklaşımlar, geleneksel yöntemlerin sınırlamalarını aşma potansiyeli taşımaktadır.
+
+\subsection{Tekrarlayan Sinir Ağları (RNN)}
+
+LSTM (Long Short-Term Memory) ve GRU (Gated Recurrent Unit) mimarileri, zaman serisi verilerindeki sekansiyel bağımlılıkları modellemek için tasarlanmıştır \cite{hochreiter1997long}. Sismik sinyallerin analizi için yaygın olarak kullanılmakta olup, özellikle P-dalgası tespiti ve faz ayrıştırma görevlerinde başarılı sonuçlar elde edilmiştir \cite{ross2018generalized}.
+
+Ancak RNN tabanlı modeller, uzun sekanslardan kaynaklanan gradyan kaybolması problemi nedeniyle uzun vadeli bağımlılıkları modellemede sınırlı kalmaktadır \cite{bengio1994learning}. Sismik sinyallerde deprem öncesi anomalilerin saatler hatta günler öncesinde oluşabileceği düşünüldüğünde, bu sınırlama kritik bir öneme sahiptir.
+
+\subsection{Evrişimli Sinir Ağları (CNN)}
+
+CNN mimarileri, spektrogram ve zaman-frekans temsillerinin analizi için etkili olduğu gösterilmiştir \cite{perol2018convolutional}. ConvNetQuake ve benzeri modeller, sismik olayların tespiti ve sınıflandırılmasında yüksek doğruluk oranları elde etmiştir.
+
+\section{Transformer Mimarisi ve Zaman Serisi Analizi}
+
+Transformer mimarisi, Vaswani ve arkadaşları tarafından 2017 yılında önerilmiş olup, doğal dil işleme alanında devrim yaratmıştır \cite{vaswani2017attention}. Self-attention mekanizması sayesinde, sekans içindeki herhangi iki pozisyon arasındaki bağımlılıkları doğrudan modelleyebilmektedir.
+
+\subsection{Attention Mekanizması}
+
+Attention mekanizması, girdi sekansındaki her elemanın diğer elemanlarla olan ilişkisini öğrenmektedir. Matematiksel olarak:
+
+\begin{equation}
+\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+\end{equation}
+
+Burada $Q$ (Query), $K$ (Key) ve $V$ (Value) matrisleri girdi sekansından türetilmekte, $d_k$ ise anahtar vektörlerinin boyutunu temsil etmektedir.
+
+\begin{figure}[htbp]
+    \centering
+    \fitfig[max width=0.82\textwidth,max height=0.48\textheight]{figures/ml_anomaly_pipeline.png}
+    \caption{STFT Öznitelikleriyle Sınıflandırma Tabanlı Anomali Tespiti Yaklaşımı}
+    \label{fig:ml_anomaly_pipeline}
+\end{figure}
+
+\subsection{Zaman Serisi için Transformer Varyantları}
+
+Zaman serisi analizi için özelleştirilmiş Transformer varyantları geliştirilmiştir:
+
+\begin{enumerate}
+    \item \textbf{Time Series Transformer (TST):} Doğrudan zaman serisi verileri için tasarlanmış olup, pozisyonel kodlama ve maskeleme stratejileri içermektedir \cite{li2019enhancing}.
+    
+    \item \textbf{Informer:} Uzun sekans tahmini için ProbSparse self-attention mekanizması kullanan verimli bir Transformer varyantıdır \cite{zhou2021informer}. $O(L \log L)$ karmaşıklığı ile uzun sekanslarda etkili çalışmaktadır.
+    
+    \item \textbf{Temporal Fusion Transformer (TFT):} Çok değişkenli zaman serisi tahmini için tasarlanmış olup, statik kovaryantlar, geçmiş gözlemler ve gelecek bilinen girdileri birleştirmektedir \cite{lim2021temporal}.
+    
+    \item \textbf{Autoformer:} Auto-correlation mekanizması ile mevsimsel ve trend bileşenlerini ayrıştıran bir mimaridir \cite{wu2021autoformer}.
+\end{enumerate}
+
+\section{Anomali Tespiti Yaklaşımları}
+
+Zaman serisi verilerinde anomali tespiti, çeşitli yaklaşımlarla gerçekleştirilebilmektedir:
+
+\subsection{Yeniden Yapılandırma Tabanlı Yöntemler}
+
+Autoencoder mimarileri, normal veriyi sıkıştırıp yeniden yapılandırmayı öğrenmektedir. Yeniden yapılandırma hatası yüksek olan örnekler anomali olarak işaretlenmektedir \cite{sakurada2014anomaly}:
+
+\begin{equation}
+\text{Anomali Skoru} = ||x - \hat{x}||^2
+\end{equation}
+
+Burada $x$ orijinal girdi, $\hat{x}$ ise yeniden yapılandırılmış çıktıdır.
+
+\subsection{Tahmin Tabanlı Yöntemler}
+
+Model, bir sonraki zaman adımını veya pencereyi tahmin etmek üzere eğitilmektedir. Gerçek değer ile tahmin arasındaki fark, anomali skorunu oluşturmaktadır.
+
+\subsection{Sınıflandırma Tabanlı Yöntemler}
+
+İkili sınıflandırma yaklaşımıyla, her zaman penceresi ``normal'' veya ``anormal'' olarak etiketlenmektedir. Bu yaklaşım, etiketli veriye ihtiyaç duymaktadır.
+
+\section{Sismik Anomali ve Deprem Öncesi Sinyaller}
+
+Deprem öncesi anomali tespiti, sismoloji alanında tartışmalı bir konu olmaya devam etmektedir \cite{geller1997earthquakes}. Bazı çalışmalar, deprem öncesi sismik aktivitede değişimler raporlamış olsa da, bu bulguların evrenselliği ve güvenilirliği sorgulanmaktadır.
+
+\subsection{Mikrosisimik Aktivite Değişimleri}
+
+Deprem öncesi dönemde mikrosismik aktivitede artış veya sessizlik dönemleri gözlemlenebilmektedir \cite{scholz1990mechanics}. Bu değişimler, fay hattındaki gerilim birikiminin göstergesi olabilir.
+
+\subsection{Frekans İçeriği Değişimleri}
+
+Bazı araştırmalar, deprem öncesi sismik sinyallerin frekans içeriğinde değişimler tespit etmiştir. Bu değişimler, kayaç özelliklerinin stres altında değişmesiyle ilişkilendirilebilir.
+
+\section{Literatür Özeti}
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Literatürdeki İlgili Çalışmaların Karşılaştırması}
+\begin{adjustbox}{center,max width=\textwidth}
+\begin{tabularx}{0.96\textwidth}{p{2.45cm}p{2.45cm}p{3.0cm}X}
+\toprule
+\textbf{Çalışma} & \textbf{Yöntem} & \textbf{Veri Seti} & \textbf{Sonuçlar} \\
+\midrule
+Ross et al., 2018 & CNN + RNN & Southern California & P-dalgası tespitinde yüksek doğruluk \\
+Perol et al., 2018 & ConvNetQuake & Oklahoma & Küçük depremlerin başarılı tespiti \\
+Mousavi et al., 2020 & EQTransformer & Global & Çoklu görev öğrenmede başarı \\
+Zhou et al., 2021 & Informer & Çeşitli zaman serileri & Uzun vadeli tahminde üstün performans \\
+\bottomrule
+\end{tabularx}
+\end{adjustbox}
+\label{tab:literatur}
+\end{table}
+
+Bu literatür taraması ışığında, sismik anomali analizinde hem derin öğrenme hem de öznitelik tabanlı makine öğrenmesi yaklaşımlarının önemli bir araştırma alanı oluşturduğu görülmektedir. Bu tez, STFT tabanlı zaman-frekans öznitelikleri ile temiz normal/anomali ayrımı yapabilen uçtan uca bir DeepSeis prototipi geliştirerek bu alana uygulamalı bir katkı sunmayı hedeflemektedir.

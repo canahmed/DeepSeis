@@ -1,0 +1,68 @@
+% -------------------- SONUÇ VE ÖNERİLER --------------------
+\chapter{SONUÇ VE ÖNERİLER}
+
+\section{Sonuçlar}
+
+Bu tez çalışmasında DeepSeis adı verilen sismik anomali analizi prototipi geliştirilmiştir. Sistem; sürekli sismik kayıtların pencerelenmesi, STFT tabanlı zaman-frekans temsillerinin çıkarılması, farklı etiketleme stratejilerinin denenmesi, makine öğrenmesi ve derin öğrenme modellerinin karşılaştırılması ve seçilen modelin web arayüzünde çalıştırılması adımlarını kapsamaktadır.
+
+Çalışmanın en önemli sonucu, problem tanımının model performansı üzerinde belirleyici olduğudur. Kronolojik bölümleme ile yapılan deprem öncesi kısa dönemli tahmin deneylerinde pozitif sınıf oranı test döneminde çok düşük kalmış ve F1 skorları sınırlı düzeyde gerçekleşmiştir. Buna karşın, temiz normal/anomali ayrımı protokolünde belirgin biçimde daha güçlü sonuçlar elde edilmiştir.
+
+\subsection{Teknik Sonuçlar}
+
+\begin{enumerate}
+    \item \textbf{Temiz normal/anomali ayrımı:} Mw $\geq$ 4,0 olaylarının $\pm$60 dakika çevresi pozitif sınıf, olaylardan en az 48 saat uzak pencereler ise temiz normal sınıf olarak tanımlandığında HistGradientBoosting modeli 0,8124 accuracy, 0,8066 precision, 0,8219 recall ve 0,8142 F1 skoruna ulaşmıştır.
+    
+    \item \textbf{Skor tabanlı ayrım gücü:} Aynı modelde ROC-AUC 0,8979 ve PR-AUC 0,9090 olarak ölçülmüştür. Bu değerler, modelin normal ve olay çevresi anomali pencerelerini yalnızca tek bir eşikte değil, genel skor sıralaması bakımından da etkili biçimde ayırabildiğini göstermektedir.
+    
+    \item \textbf{Kronolojik testlerin zorluğu:} Zaman sırası korunan testlerde pozitif sınıf oranı yaklaşık \%1 seviyesine düşmüştür. Bu nedenle yüksek accuracy değerleri tek başına yeterli görülmemiş; precision, recall, F1, ROC-AUC, PR-AUC ve karışıklık matrisi birlikte değerlendirilmiştir.
+    
+    \item \textbf{STFT öznitelikleri:} STFT spektrogramlarından çıkarılan özet istatistiksel öznitelikler, temiz normal/anomali ayrımı görevinde güçlü bir temsil sağlamıştır. Bu bulgu, sismik sinyallerin frekans içeriğindeki değişimlerin anomali tespiti açısından önemli olduğunu desteklemektedir.
+    
+    \item \textbf{Uygulama prototipi:} En başarılı model, \texttt{joblib} formatında kaydedilmiş ve Flask tabanlı DeepSeis arayüzüne entegre edilmiştir. Arayüz, gelen test pencereleri için anomali olasılığı üretmekte ve karar eşiğine göre görsel uyarı sunmaktadır.
+\end{enumerate}
+
+\subsection{Bilimsel Yorum}
+
+Bu çalışma deterministik deprem tahmini iddiası taşımamaktadır. Elde edilen güçlü sonuçlar, deprem olayına yakın sismik pencereler ile olaylardan uzak temiz normal pencereler arasında öğrenilebilir zaman-frekans farkları bulunduğunu göstermektedir. Bu nedenle sonuçlar, ``belirli koşullar altında sismik normal/anomali ayrımı'' olarak yorumlanmalıdır. Depremden saatler önce güvenilir uyarı üretmek ise daha uzun süreli, çok istasyonlu ve daha dengeli olay dağılımına sahip veri setleriyle ayrıca araştırılmalıdır.
+
+\section{Sınırlılıklar ve Etik Uyarılar}
+
+\begin{enumerate}
+    \item \textbf{Tahmin iddiası:} DeepSeis çıktıları ``kesin deprem olacak'' şeklinde yorumlanmamalıdır. Sistem araştırma amaçlı bir anomali analiz prototipidir.
+    
+    \item \textbf{Tek istasyon ve kanal sınırı:} Mevcut güçlü sonuçlar HHZ bileşeni üzerinden elde edilmiştir. Çok bileşenli analiz için HHZ, HHN ve HHE kanallarının zaman damgası seviyesinde hizalanması gerekmektedir.
+    
+    \item \textbf{Temiz deney protokolü:} En iyi sonuçlar olay çevresi pencereleri ile olaylardan en az 48 saat uzak normal pencereler arasındaki kontrollü ayrımda elde edilmiştir. Bu protokol gerçek zamanlı geleceğe dönük tahmin senaryosundan farklıdır.
+    
+    \item \textbf{Veri dağılımı:} Deprem olayları veri zaman aralığı boyunca homojen dağılmamaktadır. Bu durum kronolojik testlerde train/test dağılım kaymasına neden olmaktadır.
+    
+    \item \textbf{Gürültü kaynakları:} Trafik, inşaat, hava koşulları ve yerel titreşimler gibi tektonik olmayan kaynaklar model skorlarını etkileyebilir.
+\end{enumerate}
+
+\section{Öneriler}
+
+\subsection{Gelecek Araştırmalar}
+
+\begin{enumerate}
+    \item \textbf{Çoklu istasyon entegrasyonu:} Farklı istasyonların birlikte değerlendirilmesi, tek istasyon gürültüsünü azaltabilir ve mekansal örüntülerin öğrenilmesini sağlayabilir.
+    
+    \item \textbf{Üç bileşenli modelleme:} HHZ, HHN ve HHE kanallarının zaman hizalı biçimde birleştirilmesi, modelin polarizasyon ve yön bilgilerini kullanmasına olanak tanıyabilir.
+    
+    \item \textbf{Daha uzun veri aralığı:} Birkaç ay yerine yıllara yayılan veri kullanımı, daha fazla büyük deprem örneği sağlayarak kronolojik genelleme problemini daha sağlıklı değerlendirmeye yardımcı olacaktır.
+    
+    \item \textbf{Açıklanabilirlik analizi:} SHAP, permutation importance veya attention tabanlı yöntemlerle hangi frekans ve zaman bölgelerinin model kararında etkili olduğu incelenmelidir.
+    
+    \item \textbf{Gerçek zamanlı akış:} Mevcut arayüz test pencereleri üzerinde çalışmaktadır. Gelecek aşamada canlı MiniSEED akışı veya istasyon API'si üzerinden gerçek zamanlı veri beslemesi eklenebilir.
+\end{enumerate}
+
+\subsection{Uygulama Önerileri}
+
+\begin{enumerate}
+    \item Model çıktıları tek başına afet uyarısı olarak değil, uzman değerlendirmesine yardımcı araştırma sinyali olarak kullanılmalıdır.
+    \item Arayüzde gösterilen anomali olasılığı, model protokolü ve karar eşiğiyle birlikte raporlanmalıdır.
+    \item Yeni veri eklendikçe model performansı yeniden ölçülmeli ve eski metrikler güncel veri üzerinde doğrulanmalıdır.
+\end{enumerate}
+
+\section{Son Söz}
+
+DeepSeis, bu çalışma sonunda yalnızca eğitim scriptlerinden oluşan bir deneme projesi olmaktan çıkmış; veri işleme, deney yönetimi, metrik raporlama, model kaydetme ve web arayüzünde model çalıştırma adımlarını içeren bütünlüklü bir prototipe dönüşmüştür. En başarılı deneyde elde edilen \%80 üzeri accuracy, precision, recall ve F1 değerleri, sismik zaman-frekans örüntülerinden temiz normal/anomali ayrımı yapılabileceğini göstermektedir. Bununla birlikte, deprem tahmini bilimsel olarak çok daha zor bir problem olduğundan, çalışmanın sonuçları dikkatli ve etik biçimde yorumlanmalıdır.
